@@ -1,1 +1,1 @@
-# Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
+# Evaluación Numérica de la Conjetura de Oertel para el caso unidimensional
