@@ -1,14 +1,19 @@
 import numpy as np
 from numpy.linalg import norm
-from vol_reject import rejection_sampling 
+from trunk import baul_rejection_parallel
 
 def ratio_cp(
     A, b, cp_full, d, z_vals, N_hip, N,
-    tol=1e-9, seed=None, batch=None, guided=False
+    tol=1e-9, seed=None, batch=None, guided=False,
+    into_baul: int = 5000,
+    use_parallel: bool = False,
+    chunk_N: int | None = None,
+    max_workers: int | None = None,
+    max_draws: int | None = None,
 ):
     """
     PEOR volumen NO normalizado de cortes H que pasan por cp.
-    - a_z = Vol(S_z) con rejection_sampling(...)
+    - a_z = Vol(S_z) relativa con baul_rejection(...).stats['vol_est']
     - Para cada dirección u: añadimos -u^T x <= -u^T cp, re-muestreamos y
       sumamos a_z * min(frac, 1-frac). Tomamos el mínimo sobre u.
     """
@@ -22,9 +27,21 @@ def ratio_cp(
 
     # 1) Volúmenes por fibra (a_z)
     a_z = {}
+    # Configuración unificada: siempre usar motor paralelo, con 1 worker si no paralelo
+    chunkN = (chunk_N or N)
+    workers = (max_workers if use_parallel else 1)
     for zi in z_vals:
         seed_z = rng.integers(2**63 - 1)
-        a_z[zi] = rejection_sampling(d, A, b, zi, N, tol=tol, seed=seed_z, batch=batch)
+        _, stats_z = baul_rejection_parallel(
+            d, A, b, zi,
+            into=into_baul,
+            chunk_N=int(chunkN),
+            tol=tol,
+            seed=int(seed_z),
+            max_workers=workers,
+            max_draws=max_draws,
+        )
+        a_z[zi] = float(stats_z.get("vol_est", 0.0))
     volS = sum(a_z.values())
     if volS <= 0.0:
         return 0.0
@@ -49,7 +66,16 @@ def ratio_cp(
             if a_z[zi] <= 0.0:
                 continue
             seed_cut = rng.integers(2**63 - 1)
-            vol_cut  = rejection_sampling(d, A_aug, b_aug, zi, N, tol=tol, seed=seed_cut, batch=batch)
+            _, stats_cut = baul_rejection_parallel(
+                d, A_aug, b_aug, zi,
+                into=into_baul,
+                chunk_N=int(chunkN),
+                tol=tol,
+                seed=int(seed_cut),
+                max_workers=workers,
+                max_draws=max_draws,
+            )
+            vol_cut = float(stats_cut.get("vol_est", 0.0))
             frac     = vol_cut / (a_z[zi] + 1e-12)
             val_u   += a_z[zi] * min(frac, 1.0 - frac)
 
