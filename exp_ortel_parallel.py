@@ -100,7 +100,7 @@ def run_cpu_tasks_in_parallel(seeds: List[int], max_workers: Optional[int] = Non
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Experimentos ORTEL en paralelo (multi-proceso)")
-    parser.add_argument("--seeds", type=str, default="105,106,107,108,109", help="Lista de semillas separadas por coma")
+    parser.add_argument("--seeds", type=str, default="105,106,107,108,109gi", help="Lista de semillas separadas por coma")
     parser.add_argument("--workers", type=int, default=5, help="Nº de procesos en paralelo")
     parser.add_argument("--outdir", type=str, default="results", help="Carpeta para guardar JSONs y artefactos")
     parser.add_argument("--fibers-dir", type=str, default=None, help="Carpeta base para guardar/cargar fibras por semilla (dentro de outdir si es relativa)")
