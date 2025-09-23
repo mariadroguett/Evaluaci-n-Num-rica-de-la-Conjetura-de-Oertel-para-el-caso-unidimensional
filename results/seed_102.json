@@ -1,0 +1,23 @@
+{
+  "mode": "ortel_parallel",
+  "d": 2,
+  "z_vals": [
+    0,
+    1
+  ],
+  "n_per_z": 5,
+  "N_cp": 50,
+  "N_hip": 100,
+  "N": 100000,
+  "tol": 1e-09,
+  "batch": 5000,
+  "guided": false,
+  "defer_rejection": true,
+  "seed": 102,
+  "F": 0.215180486243691,
+  "bestCP": [
+    0.0,
+    0.17443356690430178,
+    0.6556736213458098
+  ]
+}

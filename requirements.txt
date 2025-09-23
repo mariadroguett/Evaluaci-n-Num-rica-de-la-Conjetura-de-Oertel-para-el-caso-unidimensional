@@ -1,4 +1,2 @@
-numpy 
+numpy
 scipy
-pandas  
-matplotlib
