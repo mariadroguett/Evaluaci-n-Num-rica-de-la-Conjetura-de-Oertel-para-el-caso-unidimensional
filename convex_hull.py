@@ -1,22 +1,93 @@
+import os
+import csv
 import numpy as np
 from scipy.spatial import ConvexHull
 
 
-def random_vertices_by_fiber(z_vals, d=2, n_per_z=30, seed=None):
-    """""
+def random_vertices_by_fiber(z_vals, d=2, n_per_z=30, seed=None, save_fibers_dir=None, return_by_fiber=False):
+    """
     Genera puntos aleatorios (vértices candidatos) en R^{1+d}:
       - para cada z en z_vals, genera n_per_z puntos p ~ U([0,1]^d)
       - devuelve un array (len(z_vals)*n_per_z, 1+d) con primera col = z
-    Estos puntos definen el politopo como su convex hull.
-    """""
+    Opcionalmente, guarda las fibras en CSV y/o retorna un dict por fibra.
+    """
     rng = np.random.default_rng(seed)
     all_pts = []
+    by_fiber = {}
     for z in z_vals:
         P = rng.random((n_per_z, d))                        # (n_per_z, d)
         Z = np.full((n_per_z, 1), float(int(z)), float)     # (n_per_z, 1)
         V = np.hstack([Z, P])                               # (n_per_z, 1+d)
         all_pts.append(V)
-    return np.vstack(all_pts)
+        by_fiber[int(z)] = P.copy()
+
+    verts = np.vstack(all_pts)
+
+    if save_fibers_dir:
+        try:
+            os.makedirs(save_fibers_dir, exist_ok=True)
+            # archivo completo con z,p1..pd
+            all_path = os.path.join(save_fibers_dir, "all_points.csv")
+            header_all = ["z"] + [f"p{i+1}" for i in range(d)]
+            with open(all_path, "w", newline="", encoding="utf-8") as f:
+                w = csv.writer(f)
+                w.writerow(header_all)
+                for row in verts:
+                    w.writerow([int(row[0])] + [float(x) for x in row[1:1+d]])
+
+            # archivos por fibra: fiber_z_<z>.csv con p1..pd
+            for z, P in by_fiber.items():
+                z_path = os.path.join(save_fibers_dir, f"fiber_z_{z}.csv")
+                header_z = [f"p{i+1}" for i in range(d)]
+                with open(z_path, "w", newline="", encoding="utf-8") as f:
+                    w = csv.writer(f)
+                    w.writerow(header_z)
+                    for p in P:
+                        w.writerow([float(x) for x in p])
+        except Exception:
+            # No interrumpir si falla el guardado
+            pass
+
+    if return_by_fiber:
+        return verts, by_fiber
+    return verts
+
+
+def load_fibers_from_dir(d, fibers_dir):
+    """
+    Carga vértices (z + p) desde una carpeta previamente guardada con
+    random_vertices_by_fiber(save_fibers_dir=...). Si existe all_points.csv
+    lo usa; de lo contrario intenta unir fiber_z_*.csv.
+    """
+    all_path = os.path.join(fibers_dir, "all_points.csv")
+    rows = []
+    if os.path.isfile(all_path):
+        with open(all_path, "r", encoding="utf-8") as f:
+            reader = csv.reader(f)
+            header = next(reader, None)
+            for r in reader:
+                z = int(float(r[0]))
+                p = [float(x) for x in r[1:1+d]]
+                rows.append([z] + p)
+    else:
+        # Buscar archivos fiber_z_*.csv
+        for name in os.listdir(fibers_dir):
+            if name.startswith("fiber_z_") and name.endswith(".csv"):
+                try:
+                    z = int(name[len("fiber_z_"):-len(".csv")])
+                except Exception:
+                    continue
+                path = os.path.join(fibers_dir, name)
+                with open(path, "r", encoding="utf-8") as f:
+                    reader = csv.reader(f)
+                    header = next(reader, None)
+                    for r in reader:
+                        p = [float(x) for x in r[:d]]
+                        rows.append([z] + p)
+    if not rows:
+        raise FileNotFoundError(f"No se encontraron fibras en {fibers_dir}")
+    verts = np.asarray(rows, dtype=float)
+    return verts
 
 
 def generate_convex_hull(verts, tol=1e-10, dedupe_decimals=8, qhull_opts="QJ"):
@@ -89,4 +160,3 @@ def generate_convex_hull(verts, tol=1e-10, dedupe_decimals=8, qhull_opts="QJ"):
 #El orden de las filas de A y b no necesariamente coincide con el orden de los vértices: 
 # ConvexHull las ordena según su propia lógica interna para recorrer las caras.
     
-
