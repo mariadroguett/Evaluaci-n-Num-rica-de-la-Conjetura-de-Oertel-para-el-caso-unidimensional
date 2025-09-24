@@ -1,0 +1,4 @@
+2024-11-29 16:07:59	2.7s	peaceful_pare	ERR	3c19d293d2c0b53205295580a75471c5	c7d8e5b8-b5e3-4d5c-a701-17c8190efac4	nextflow run workflow_process_files_parallele_per_chunk.nf -c nextflow.config
+2024-11-29 16:09:37	2.5s	furious_hilbert	ERR	66fc1658ff81a912cc069f106774c269	19fbe648-93f1-48ee-9a67-be59b62fec3f	nextflow run workflow_process_files_parallele_per_chunk.nf -c nextflow.config
+2024-11-29 16:10:50	2.1s	confident_ekeblad	ERR	66fc1658ff81a912cc069f106774c269	d864903e-ff6c-4e23-9671-1692f91814bd	nextflow run workflow_process_files_parallele_per_chunk.nf -c nextflow.config
+2024-11-29 16:12:46	3.2s	drunk_edison	OK	2b64096a304d1380b482e08c45db644d	974f22f5-e239-4579-b831-4bd2fdd88ff8	nextflow run workflow_process_files_parallele_per_chunk.nf -c nextflow.config

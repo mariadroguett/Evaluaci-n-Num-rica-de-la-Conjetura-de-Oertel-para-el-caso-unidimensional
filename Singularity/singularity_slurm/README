@@ -1,0 +1,25 @@
+1.In order to run singularity you need to create in your terminal (or in the same slurm script) the
+logs folder. In this specific case, on your run_slurm_sing.sh the log folder is named as logs_merqury, 
+so, in your working folder you type:
+
+===================================================================================================
+mkdir logs_merqury
+===================================================================================================
+
+2.Then you can run your run_slurm_script.sh as:
+===================================================================================================
+sbatch run_slurm_sing.sh
+===================================================================================================
+
+3.You can check if slurm is running your job with squeue command (type it in your terminal)
+
+4.If you want to see how is your script working, you can enter to de logs_merqury folder
+=========================================
+cd logs_merqurt_folder
+=========================================
+
+and do:
+==============================================
+less/tail/cat  optim_sing.out /optmis_sing.err
+==============================================
+(Choose just one command to explore the file)
