@@ -1,0 +1,105 @@
+[ORTEL] Calculando volumen total por Monte Carlo...
+[ORTEL] Volumen total estimado ≈ 0.50155
+[ORTEL] Aceptados 1/50 (z=1)
+[ORTEL] Aceptados 2/50 (z=1)
+[ORTEL] Aceptados 3/50 (z=1)
+[ORTEL] Aceptados 4/50 (z=1)
+[ORTEL] Aceptados 5/50 (z=0)
+[ORTEL] Aceptados 6/50 (z=0)
+[ORTEL] Aceptados 7/50 (z=0)
+[ORTEL] Aceptados 8/50 (z=0)
+[ORTEL] Aceptados 9/50 (z=0)
+[ORTEL] Aceptados 10/50 (z=1)
+[ORTEL] Aceptados 11/50 (z=1)
+[ORTEL] Aceptados 12/50 (z=1)
+[ORTEL] Aceptados 13/50 (z=1)
+[ORTEL] Aceptados 14/50 (z=0)
+[ORTEL] Aceptados 15/50 (z=1)
+[ORTEL] Aceptados 16/50 (z=1)
+[ORTEL] Aceptados 17/50 (z=1)
+[ORTEL] Aceptados 18/50 (z=0)
+[ORTEL] Aceptados 19/50 (z=0)
+[ORTEL] Aceptados 20/50 (z=0)
+[ORTEL] Aceptados 21/50 (z=0)
+[ORTEL] Aceptados 22/50 (z=0)
+[ORTEL] Aceptados 23/50 (z=0)
+[ORTEL] Aceptados 24/50 (z=0)
+[ORTEL] Aceptados 25/50 (z=0)
+[ORTEL] Aceptados 26/50 (z=0)
+[ORTEL] Aceptados 27/50 (z=0)
+[ORTEL] Aceptados 28/50 (z=0)
+[ORTEL] Aceptados 29/50 (z=1)
+[ORTEL] Aceptados 30/50 (z=0)
+[ORTEL] Aceptados 31/50 (z=1)
+[ORTEL] Aceptados 32/50 (z=1)
+[ORTEL] Aceptados 33/50 (z=0)
+[ORTEL] Aceptados 34/50 (z=1)
+[ORTEL] Aceptados 35/50 (z=0)
+[ORTEL] Aceptados 36/50 (z=1)
+[ORTEL] Aceptados 37/50 (z=1)
+[ORTEL] Aceptados 38/50 (z=0)
+[ORTEL] Aceptados 39/50 (z=0)
+[ORTEL] Aceptados 40/50 (z=1)
+[ORTEL] Aceptados 41/50 (z=0)
+[ORTEL] Aceptados 42/50 (z=1)
+[ORTEL] Aceptados 43/50 (z=0)
+[ORTEL] Aceptados 44/50 (z=0)
+[ORTEL] Aceptados 45/50 (z=1)
+[ORTEL] Aceptados 46/50 (z=1)
+[ORTEL] Aceptados 47/50 (z=1)
+[ORTEL] Aceptados 48/50 (z=0)
+[ORTEL] Aceptados 49/50 (z=0)
+[ORTEL] Aceptados 50/50 (z=1)
+[ORTEL] Evaluando F(cp) para 50 candidatos...
+[ORTEL] Eval 1/50: F≈0.129598 | best≈0.129598
+[ORTEL] Eval 2/50: F≈0.000717775 | best≈0.129598
+[ORTEL] Eval 3/50: F≈0.0396371 | best≈0.129598
+[ORTEL] Eval 4/50: F≈0.180341 | best≈0.180341
+[ORTEL] Eval 5/50: F≈0.0465158 | best≈0.180341
+[ORTEL] Eval 6/50: F≈0.0878875 | best≈0.180341
+[ORTEL] Eval 7/50: F≈0.0717576 | best≈0.180341
+[ORTEL] Eval 8/50: F≈0.0511813 | best≈0.180341
+[ORTEL] Eval 9/50: F≈0.0738909 | best≈0.180341
+[ORTEL] Eval 10/50: F≈0.0989732 | best≈0.180341
+[ORTEL] Eval 11/50: F≈0.055488 | best≈0.180341
+[ORTEL] Eval 12/50: F≈0.123059 | best≈0.180341
+[ORTEL] Eval 13/50: F≈-0.000857342 | best≈0.180341
+[ORTEL] Eval 14/50: F≈0.149855 | best≈0.180341
+[ORTEL] Eval 15/50: F≈0.109501 | best≈0.180341
+[ORTEL] Eval 16/50: F≈0.0203768 | best≈0.180341
+[ORTEL] Eval 17/50: F≈0.164071 | best≈0.180341
+[ORTEL] Eval 18/50: F≈0.0424883 | best≈0.180341
+[ORTEL] Eval 19/50: F≈0.0629648 | best≈0.180341
+[ORTEL] Eval 20/50: F≈0.169375 | best≈0.180341
+[ORTEL] Eval 21/50: F≈0.0134583 | best≈0.180341
+[ORTEL] Eval 22/50: F≈0.0245439 | best≈0.180341
+[ORTEL] Eval 23/50: F≈0.0465956 | best≈0.180341
+[ORTEL] Eval 24/50: F≈0.0376832 | best≈0.180341
+[ORTEL] Eval 25/50: F≈0.0307248 | best≈0.180341
+[ORTEL] Eval 26/50: F≈0.114565 | best≈0.180341
+[ORTEL] Eval 27/50: F≈0.0442229 | best≈0.180341
+[ORTEL] Eval 28/50: F≈0.0887648 | best≈0.180341
+[ORTEL] Eval 29/50: F≈0.0277141 | best≈0.180341
+[ORTEL] Eval 30/50: F≈0.172047 | best≈0.180341
+[ORTEL] Eval 31/50: F≈0.0610707 | best≈0.180341
+[ORTEL] Eval 32/50: F≈0.0140963 | best≈0.180341
+[ORTEL] Eval 33/50: F≈0.0804905 | best≈0.180341
+[ORTEL] Eval 34/50: F≈0.134922 | best≈0.180341
+[ORTEL] Eval 35/50: F≈0.0803509 | best≈0.180341
+[ORTEL] Eval 36/50: F≈0.0343535 | best≈0.180341
+[ORTEL] Eval 37/50: F≈0.0753863 | best≈0.180341
+[ORTEL] Eval 38/50: F≈0.150793 | best≈0.180341
+[ORTEL] Eval 39/50: F≈0.137753 | best≈0.180341
+[ORTEL] Eval 40/50: F≈0.0683681 | best≈0.180341
+[ORTEL] Eval 41/50: F≈0.0213937 | best≈0.180341
+[ORTEL] Eval 42/50: F≈0.0613698 | best≈0.180341
+[ORTEL] Eval 43/50: F≈0.0927325 | best≈0.180341
+[ORTEL] Eval 44/50: F≈0.024185 | best≈0.180341
+[ORTEL] Eval 45/50: F≈0.0720766 | best≈0.180341
+[ORTEL] Eval 46/50: F≈0.151809 | best≈0.180341
+[ORTEL] Eval 47/50: F≈0.00865318 | best≈0.180341
+[ORTEL] Eval 48/50: F≈0.0471738 | best≈0.180341
+[ORTEL] Eval 49/50: F≈0.110637 | best≈0.180341
+[ORTEL] Eval 50/50: F≈0.0210149 | best≈0.180341
+[ORTEL] Mejor F≈0.180341 | BestCP=[1.         0.22779116 0.7360371 ]
+{"seed": 20357050, "F": 0.18034094307773416, "bestCP": [1.0, 0.22779115569506492, 0.7360371049682437]}

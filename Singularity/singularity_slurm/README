@@ -1,25 +1,27 @@
-1.In order to run singularity you need to create in your terminal (or in the same slurm script) the
-logs folder. In this specific case, on your run_slurm_sing.sh the log folder is named as logs_merqury, 
-so, in your working folder you type:
+Guía rápida (SLURM + Singularity + Nextflow)
 
-===================================================================================================
-mkdir logs_merqury
-===================================================================================================
+1) Crear carpeta de logs antes de enviar el job
+================================================================================
+mkdir -p logs_slurm
+================================================================================
 
-2.Then you can run your run_slurm_script.sh as:
-===================================================================================================
-sbatch run_slurm_sing.sh
-===================================================================================================
+2) Enviar el job
+================================================================================
+sbatch run_singularity_slurm.bash
+================================================================================
 
-3.You can check if slurm is running your job with squeue command (type it in your terminal)
+3) Verificar el estado del job
+- Usa: squeue -u $USER
 
-4.If you want to see how is your script working, you can enter to de logs_merqury folder
-=========================================
-cd logs_merqurt_folder
-=========================================
+4) Revisar logs del job
+================================================================================
+cd logs_slurm
+# Revisa el .out o el .err, por ejemplo:
+less optim_sing_<JOBID>.out
+less optim_sing_<JOBID>.err
+================================================================================
 
-and do:
-==============================================
-less/tail/cat  optim_sing.out /optmis_sing.err
-==============================================
-(Choose just one command to explore the file)
+Notas
+- El script sbatch ejecuta Nextflow directamente y deja que Nextflow lance Singularity
+  para cada proceso del pipeline (ver nextflow.config y main.nf).
+- Ajusta la ruta/archivo de imagen .sif en run_singularity_slurm.bash si tu nombre difiere.

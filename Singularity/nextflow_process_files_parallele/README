@@ -1,1 +1,28 @@
-type bash run_all.bash on your terminal to see the results
+Ejecución rápida (Nextflow)
+
+Requisitos
+- Nextflow instalado en el host (y Singularity disponible en el cluster para perfil slurm).
+- Imagen Singularity `.sif` si usarás el perfil `slurm` (ajusta el nombre en los scripts).
+
+Comandos útiles
+- Local (sin contenedor):
+  nextflow run main.nf -profile local \
+    --script exp_ortel_parallel.py \
+    --points "5,8,11,14,17,20" \
+    --reps 2 \
+    --N 100000 --N_cp 50 --N_hip 500
+
+- SLURM + Singularity (imagen en este directorio):
+  nextflow run main.nf -profile slurm -resume \
+    --container "python_39e84b5c10d96b50.sif" \
+    --script exp_ortel_parallel.py \
+    --points "5,8,11,14,17,20" \
+    --reps 2 \
+    --N 100000 --N_cp 50 --N_hip 500
+
+Atajos
+- Puedes usar: bash run_all.bash
+
+Notas
+- El pipeline invoca el script Python con --seed y --out por cada combinación; ahora exp_ortel_parallel.py
+  soporta tanto modo single-run (CSV) como multi-run (JSONs por semilla).

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/Singularity/nextflow_process_files_parallele/exp_ortel_parallel.py", line 164, in <module>
+    res = one_run(int(args.seed), fibers_root=fibers_root, reuse_fibers=args.reuse_fibers, cp_out_root=cp_out_root)
+  File "/home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/Singularity/nextflow_process_files_parallele/exp_ortel_parallel.py", line 62, in one_run
+    verts = random_vertices_by_fiber(Z_VALS, d=D, n_per_z=N_PER_Z, seed=seed, save_fibers_dir=fiber_dir)
+  File "/home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/convex_hull.py", line 14, in random_vertices_by_fiber
+    rng = np.random.default_rng(seed)
+  File "numpy/random/_generator.pyx", line 5084, in numpy.random._generator.default_rng
+  File "numpy/random/_pcg64.pyx", line 123, in numpy.random._pcg64.PCG64.__init__
+  File "numpy/random/bit_generator.pyx", line 535, in numpy.random.bit_generator.BitGenerator.__init__
+  File "numpy/random/bit_generator.pyx", line 315, in numpy.random.bit_generator.SeedSequence.__init__
+  File "numpy/random/bit_generator.pyx", line 389, in numpy.random.bit_generator.SeedSequence.get_assembled_entropy
+  File "numpy/random/bit_generator.pyx", line 140, in numpy.random.bit_generator._coerce_to_uint32_array
+  File "numpy/random/bit_generator.pyx", line 70, in numpy.random.bit_generator._int_to_uint32_array
+ValueError: expected non-negative integer

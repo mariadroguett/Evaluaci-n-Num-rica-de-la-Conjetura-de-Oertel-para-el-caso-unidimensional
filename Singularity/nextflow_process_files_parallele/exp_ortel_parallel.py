@@ -13,21 +13,27 @@ os.environ.update({
 })
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
-#from typing import List, Dict, Any, Optional
-#import argparse, json
 
 import numpy as np
-from convex_hull import generate_convex_hull, random_vertices_by_fiber, load_fibers_from_dir
+try:
+    from convex_hull import (
+        generate_convex_hull,
+        random_vertices_by_fiber,
+        load_fibers_from_dir,
+    )
+except ImportError:
+    from convex_hull import generate_convex_hull, random_vertices_by_fiber  # type: ignore
+    load_fibers_from_dir = None  # type: ignore
 from ortel import ortel
 
-# --- setup fijo ---
+# --- setup por defecto (sobrescribible por CLI) ---
 D = 2
 Z_VALS = [0, 1]
 N_PER_Z = 5  # número de puntos por fibra
 PARAMS = dict(
-    N_cp=50,
-    N_hip=100,
-    N=5_000_000,
+    N_cp=500,
+    N_hip=5000,
+    N=3*10**5,
     tol=1e-9,
     batch=5_000,
     guided=False,
@@ -41,9 +47,9 @@ def one_run(seed: int, fibers_root: Optional[str] = None, reuse_fibers: bool = T
     fiber_dir = None
     if fibers_root is not None:
         fiber_dir = os.path.join(fibers_root, f"seed_{int(seed)}")
-        if reuse_fibers and os.path.isdir(fiber_dir):
+        if reuse_fibers and os.path.isdir(fiber_dir) and callable(load_fibers_from_dir):
             try:
-                verts = load_fibers_from_dir(D, fiber_dir)
+                verts = load_fibers_from_dir(D, fiber_dir)  # type: ignore
                 print(f"seed={seed}: loaded fibers from {fiber_dir}")
             except Exception as e:
                 print(f"seed={seed}: failed to load fibers, regenerating: {e}")
@@ -99,18 +105,45 @@ def run_cpu_tasks_in_parallel(seeds: List[int], max_workers: Optional[int] = Non
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Experimentos ORTEL en paralelo (multi-proceso)")
-    parser.add_argument("--seeds", type=str, default="105,106,107,108,109gi", help="Lista de semillas separadas por coma")
-    parser.add_argument("--workers", type=int, default=5, help="Nº de procesos en paralelo")
+    parser = argparse.ArgumentParser(description="Experimentos ORTEL (modo single-run o multi-seed)")
+    # Parámetros del modelo (sobreescriben defaults)
+    parser.add_argument("--d", type=int, default=D, help="Dimensión d")
+    parser.add_argument("--z_vals", type=str, default=','.join(map(str, Z_VALS)), help="Valores de z separados por coma, ej: 0,1")
+    parser.add_argument("--n_per_z", type=int, default=N_PER_Z, help="Nº de puntos por fibra (n_per_z)")
+    parser.add_argument("--N", type=int, default=PARAMS["N"], help="N total de muestras")
+    parser.add_argument("--N_cp", type=int, default=PARAMS["N_cp"], help="N máximo de CPs")
+    parser.add_argument("--N_hip", type=int, default=PARAMS["N_hip"], help="N de hipótesis")
+    parser.add_argument("--batch", type=int, default=PARAMS["batch"], help="Tamaño de batch")
+    parser.add_argument("--guided", action="store_true", default=PARAMS["guided"], help="Usar guiado")
+
+    # Modo single-run (Nextflow): --seed y --out
+    parser.add_argument("--seed", type=int, default=None, help="Semilla para corrida única")
+    parser.add_argument("--out", type=str, default=None, help="Ruta del CSV de salida (single-run)")
+
+    # Modo multi-run (paralelo): --seeds y --workers
+    parser.add_argument("--seeds", type=str, default=None, help="Lista de semillas separadas por coma (multi-run)")
+    parser.add_argument("--workers", type=int, default=5, help="Nº de procesos en paralelo (multi-run)")
+
+    # Salidas auxiliares
     parser.add_argument("--outdir", type=str, default="results", help="Carpeta para guardar JSONs y artefactos")
-    parser.add_argument("--fibers-dir", type=str, default=None, help="Carpeta base para guardar/cargar fibras por semilla (dentro de outdir si es relativa)")
-    parser.add_argument("--reuse-fibers", action="store_true", help="Si existe la carpeta de fibras por semilla, la reutiliza")
-    parser.add_argument("--cp-out", type=str, default=None, help="Carpeta base para CSVs de CPs aceptados (por semilla)")
+    parser.add_argument("--fibers-dir", type=str, default=None, help="Carpeta base para guardar/cargar fibras (por semilla)")
+    parser.add_argument("--reuse-fibers", action="store_true", help="Reutilizar fibras si existen")
+    parser.add_argument("--cp-out", type=str, default=None, help="Carpeta base para CSVs de CPs aceptados")
     args = parser.parse_args()
 
-    seeds = [int(s.strip()) for s in args.seeds.split(",") if s.strip()]
+    # Aplicar overrides de parámetros globales
+    D = int(args.d)
+    Z_VALS = [int(s.strip()) for s in str(args.z_vals).split(',') if s.strip()]
+    N_PER_Z = int(args.n_per_z)
+    PARAMS.update({
+        "N": int(args.N),
+        "N_cp": int(args.N_cp),
+        "N_hip": int(args.N_hip),
+        "batch": int(args.batch),
+        "guided": bool(args.guided),
+    })
 
-    # Resolver rutas
+    # Resolver rutas auxiliares
     outdir = args.outdir
     os.makedirs(outdir, exist_ok=True)
     fibers_root = None
@@ -126,29 +159,53 @@ if __name__ == '__main__':
             cp_out_root = os.path.join(outdir, cp_out_root)
         os.makedirs(cp_out_root, exist_ok=True)
 
-    results = run_cpu_tasks_in_parallel(
-        seeds,
-        max_workers=args.workers,
-        fibers_root=fibers_root,
-        reuse_fibers=args.reuse_fibers,
-        cp_out_root=cp_out_root,
-    )
+    # Modo single-run (usado por Nextflow)
+    if args.seed is not None:
+        res = one_run(int(args.seed), fibers_root=fibers_root, reuse_fibers=args.reuse_fibers, cp_out_root=cp_out_root)
+        # Si se especifica --out, escribir CSV compatible con el merge de Nextflow
+        if args.out:
+            csv_path = args.out
+            os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+            with open(csv_path, 'w', encoding='utf-8') as f:
+                f.write('seed,F,bestCP\n')
+                bestcp_str = json.dumps(res['bestCP'], ensure_ascii=False)
+                f.write(f"{res['seed']},{res['F']},{bestcp_str}\n")
+            print(f"wrote {csv_path}")
+        else:
+            # Si no hay --out, emitir JSON por stdout
+            print(json.dumps(res, ensure_ascii=False))
+    else:
+        # Modo multi-run en paralelo
+        seeds: List[int] = []
+        if args.seeds:
+            seeds = [int(s.strip()) for s in args.seeds.split(',') if s.strip()]
+        if not seeds:
+            print("No seeds provided. Use --seed for single run or --seeds for multi-run.")
+            exit(1)
 
-    # Guardar cada corrida en JSON consolidado
-    for r in results:
-        out = {
-            "mode": "ortel_parallel",
-            "d": D,
-            "z_vals": Z_VALS,
-            "n_per_z": N_PER_Z,
-            **PARAMS,
-            "seed": r["seed"],
-            "F": r["F"],
-            "bestCP": r["bestCP"],
-        }
-        path = os.path.join(outdir, f"seed_{r['seed']}.json")
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False, indent=2)
-        print(f"wrote {path}")
+        results = run_cpu_tasks_in_parallel(
+            seeds,
+            max_workers=args.workers,
+            fibers_root=fibers_root,
+            reuse_fibers=args.reuse_fibers,
+            cp_out_root=cp_out_root,
+        )
 
-    print(f"Completed {len(results)} runs.")
+        # Guardar cada corrida en JSON consolidado
+        for r in results:
+            out = {
+                "mode": "ortel_parallel",
+                "d": D,
+                "z_vals": Z_VALS,
+                "n_per_z": N_PER_Z,
+                **PARAMS,
+                "seed": r["seed"],
+                "F": r["F"],
+                "bestCP": r["bestCP"],
+            }
+            path = os.path.join(outdir, f"seed_{r['seed']}.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(out, f, ensure_ascii=False, indent=2)
+            print(f"wrote {path}")
+
+        print(f"Completed {len(results)} runs.")
