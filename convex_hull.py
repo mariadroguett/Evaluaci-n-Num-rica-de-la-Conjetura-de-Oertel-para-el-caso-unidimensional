@@ -53,44 +53,7 @@ def random_vertices_by_fiber(z_vals, d=2, n_per_z=30, seed=None, save_fibers_dir
     return verts
 
 
-def load_fibers_from_dir(d, fibers_dir):
-    """
-    Carga vértices (z + p) desde una carpeta previamente guardada con
-    random_vertices_by_fiber(save_fibers_dir=...). Si existe all_points.csv
-    lo usa; de lo contrario intenta unir fiber_z_*.csv.
-    """
-    all_path = os.path.join(fibers_dir, "all_points.csv")
-    rows = []
-    if os.path.isfile(all_path):
-        with open(all_path, "r", encoding="utf-8") as f:
-            reader = csv.reader(f)
-            header = next(reader, None)
-            for r in reader:
-                z = int(float(r[0]))
-                p = [float(x) for x in r[1:1+d]]
-                rows.append([z] + p)
-    else:
-        # Buscar archivos fiber_z_*.csv
-        for name in os.listdir(fibers_dir):
-            if name.startswith("fiber_z_") and name.endswith(".csv"):
-                try:
-                    z = int(name[len("fiber_z_"):-len(".csv")])
-                except Exception:
-                    continue
-                path = os.path.join(fibers_dir, name)
-                with open(path, "r", encoding="utf-8") as f:
-                    reader = csv.reader(f)
-                    header = next(reader, None)
-                    for r in reader:
-                        p = [float(x) for x in r[:d]]
-                        rows.append([z] + p)
-    if not rows:
-        raise FileNotFoundError(f"No se encontraron fibras en {fibers_dir}")
-    verts = np.asarray(rows, dtype=float)
-    return verts
-
-
-def generate_convex_hull(verts, tol=1e-10, dedupe_decimals=8, qhull_opts="QJ"):
+def generate_convex_hull(verts, tol=1e-10, n_point=5, qhull_opts="QJ"):
     """
     Calcula la envolvente convexa de un conjunto de vértices y devuelve la
     descripción Ax ≤ b, donde A y b permanecen inmutables en el resto del código.
@@ -141,7 +104,7 @@ def generate_convex_hull(verts, tol=1e-10, dedupe_decimals=8, qhull_opts="QJ"):
     seen = set()
     A_clean, b_clean = [], []
     for a, bi in zip(A_list, b_list):
-        key = (tuple(np.round(a, dedupe_decimals)), float(np.round(bi, dedupe_decimals)))
+        key = (tuple(np.round(a, n_point)), float(np.round(bi, n_point)))
         if key not in seen:
             seen.add(key)
             A_clean.append(a)
@@ -150,8 +113,6 @@ def generate_convex_hull(verts, tol=1e-10, dedupe_decimals=8, qhull_opts="QJ"):
     A = np.vstack(A_clean) if A_clean else np.zeros((0, V.shape[1]), dtype=float)
     b = np.array(b_clean, dtype=float)
     return A, b
-
-
 
 
 #Nota: El hecho de que salgan cosas como -0. o normales con componentes como 0.8944... 

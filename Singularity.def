@@ -1,0 +1,25 @@
+Bootstrap: docker
+From: python:3.9-slim
+
+%labels
+    Author maria
+    Description "Entorno para Evaluación Numérica de la Conjetura de Oertel"
+
+%environment
+    export PYTHONPATH=/opt/app:${PYTHONPATH}
+
+%post
+    set -eux
+    apt-get update
+    apt-get install -y --no-install-recommends build-essential
+    rm -rf /var/lib/apt/lists/*
+    mkdir -p /opt/app
+    python -m pip install --upgrade pip
+    pip install --no-cache-dir -r /opt/app/requirements.txt
+
+%files
+    requirements.txt /opt/app/requirements.txt
+    . /opt/app
+
+%runscript
+    exec python /opt/app/main_ortel.py "$@"

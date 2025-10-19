@@ -1,0 +1,96 @@
+oct-19 14:55:55.228 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ortel_pipeline.nf --container /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif --seeds 1,2,3 --n_point_values 5,8 --N 20000 --N_cp 20 --N_hip 500
+oct-19 14:55:55.372 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.8
+oct-19 14:55:55.419 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/maria/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch2,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.1,nf-tower@1.11.4-patch2,nf-wave@1.12.1
+oct-19 14:55:55.452 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+oct-19 14:55:55.453 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+oct-19 14:55:55.456 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+oct-19 14:55:55.469 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+oct-19 14:55:55.499 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/nextflow.config
+oct-19 14:55:55.504 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/nextflow.config
+oct-19 14:55:55.547 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/maria/.nextflow/secrets/store.json
+oct-19 14:55:55.552 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@d1a10ac] - activable => nextflow.secret.LocalSecretsProvider@d1a10ac
+oct-19 14:55:55.570 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+oct-19 14:55:56.207 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+oct-19 14:55:56.226 [main] DEBUG nextflow.cli.CmdRun - Launching `ortel_pipeline.nf` [astonishing_mcclintock] DSL2 - revision: 631176c962
+oct-19 14:55:56.228 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+oct-19 14:55:56.229 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+oct-19 14:55:56.293 [main] DEBUG nextflow.Session - Session UUID: afe3af81-fd99-459d-8665-68b69be07f75
+oct-19 14:55:56.293 [main] DEBUG nextflow.Session - Run name: astonishing_mcclintock
+oct-19 14:55:56.294 [main] DEBUG nextflow.Session - Executor pool size: 8
+oct-19 14:55:56.303 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+oct-19 14:55:56.309 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+oct-19 14:55:56.344 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.8 build 5956
+  Created: 06-10-2025 21:19 UTC (18:19 CLST)
+  System: Linux 6.8.0-41-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 25405@maria [127.0.1.1]
+  CPUs: 8 - Mem: 7.5 GB (1.2 GB) - Swap: 4 GB (4 GB)
+oct-19 14:55:56.370 [main] DEBUG nextflow.Session - Work-dir: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/work [ext2/ext3]
+oct-19 14:55:56.371 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/bin
+oct-19 14:55:56.384 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+oct-19 14:55:56.398 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+oct-19 14:55:56.421 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+oct-19 14:55:56.452 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+oct-19 14:55:56.466 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+oct-19 14:55:56.559 [main] DEBUG nextflow.Session - Session start
+oct-19 14:55:56.564 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/logs/trace.txt
+oct-19 14:55:56.570 [main] DEBUG nextflow.Session - Report file already exists: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/logs/report.html -- enable the 'report.overwrite' option in your config file to overwrite existing files
+nextflow.exception.AbortOperationException: Report file already exists: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/logs/report.html -- enable the 'report.overwrite' option in your config file to overwrite existing files
+	at nextflow.trace.ReportObserver.onFlowCreate(ReportObserver.groovy:133)
+	at nextflow.Session$_notifyFlowCreate_lambda40.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1138)
+	at nextflow.Session.notifyFlowCreate(Session.groovy:1093)
+	at nextflow.Session.start(Session.groovy:585)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:133)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+oct-19 14:55:57.405 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+oct-19 14:55:57.423 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `num_polytopes` -- Initialise it to a default value eg. `params.num_polytopes = some_value`
+oct-19 14:55:57.431 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `save_hull_dir` -- Initialise it to a default value eg. `params.save_hull_dir = some_value`
+oct-19 14:55:57.436 [main] WARN  nextflow.script.ScriptBinding - `params.seeds` is defined multiple times -- Assignments following the first are ignored
+oct-19 14:55:57.441 [main] WARN  nextflow.script.ScriptBinding - `params.n_point_values` is defined multiple times -- Assignments following the first are ignored
+oct-19 14:55:57.443 [main] INFO  nextflow.script.BaseScript - Iniciando pipeline ORTEL con semillas: 1,2,3
+oct-19 14:55:57.445 [main] INFO  nextflow.script.BaseScript - Parámetros: n_per_z=5, d=2, N=20000, N_cp=20, N_hip=500
+oct-19 14:55:57.445 [main] INFO  nextflow.script.BaseScript - Modo triángulo activado: usando triángulo estándar en R².
+oct-19 14:55:57.538 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: merge_results, run_ortel
+oct-19 14:55:57.560 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+oct-19 14:55:57.562 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_3be385f8588c54dc: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel_pipeline.nf
+oct-19 14:55:57.562 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+oct-19 14:55:57.562 [main] DEBUG nextflow.Session - Session await
+oct-19 14:55:57.562 [main] DEBUG nextflow.Session - Session await > all processes finished
+oct-19 14:55:57.562 [main] DEBUG nextflow.Session - Session await > all barriers passed
+oct-19 14:55:57.583 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+oct-19 14:55:57.583 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+oct-19 14:55:57.584 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+oct-19 14:55:58.255 [main] WARN  nextflow.trace.ReportObserver - Failed to render execution report -- see the log file for details
+nextflow.exception.AbortOperationException: Report file already exists: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/logs/report.html -- enable the 'report.overwrite' option in your config file to overwrite existing files
+	at nextflow.trace.TraceHelper.newFileWriter(TraceHelper.groovy:67)
+	at nextflow.trace.ReportObserver.renderHtml(ReportObserver.groovy:284)
+	at nextflow.trace.ReportObserver.onFlowComplete(ReportObserver.groovy:143)
+	at nextflow.Session$_notifyFlowComplete_lambda45.doCall(Session.groovy:1107)
+	at nextflow.Session.notifyEvent(Session.groovy:1138)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1107)
+	at nextflow.Session.shutdown0(Session.groovy:768)
+	at nextflow.Session.destroy(Session.groovy:713)
+	at nextflow.script.ScriptRunner.shutdown(ScriptRunner.groovy:263)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:147)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Caused by: java.nio.file.FileAlreadyExistsException: /home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/logs/report.html
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:228)
+	at java.base/java.nio.file.Files.newBufferedWriter(Files.java:3001)
+	at nextflow.trace.TraceHelper.newFileWriter(TraceHelper.groovy:64)
+	... 12 common frames omitted
+oct-19 14:55:58.380 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+oct-19 14:55:58.412 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+oct-19 14:55:58.412 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

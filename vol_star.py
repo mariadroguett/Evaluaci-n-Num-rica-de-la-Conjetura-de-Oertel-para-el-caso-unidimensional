@@ -4,7 +4,7 @@ from vol_reject import rejection_sampling
 
 def ratio_cp(
     A, b, cp_full, d, z_vals, N_hip, N,
-    tol=1e-9, seed=None, batch=None
+    tol=1e-9, seed=None, batch=None, guided=False
 ):
     """
     PEOR volumen NO normalizado de cortes H que pasan por cp.
