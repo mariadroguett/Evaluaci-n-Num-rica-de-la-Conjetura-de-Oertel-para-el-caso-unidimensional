@@ -2,8 +2,16 @@ import argparse
 import numpy as np
 import os
 import csv
+import sys
 from convex_hull import generate_convex_hull, random_vertices_by_fiber
 from ortel import ortel
+
+# --- Windows-friendlya ---
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -27,9 +35,10 @@ def main():
     args = parse_args()
     np.random.seed(args.seed)
 
+    # Genera vértices por fibra (usa firma de tu convex_hull.py)
     verts = random_vertices_by_fiber(
         z_vals=args.z_vals, d=args.d, n_per_z=args.n_per_z,
-        seed=args.seed, save_fibers_dir=None
+        seed=args.seed, save_fibers_dir=args.save_fibers_dir
     )
 
     d = args.d
@@ -41,8 +50,9 @@ def main():
         [1, 0, 1],
         [1, 1/2, 1]
     ], dtype=float)
-    verts_for_hull = triangle if args.triangle else verts
-    A, b = generate_convex_hull(verts_for_hull, n_point=args.n_point)
+
+    # n_point aquí solo se usa como precisión de redondeo en generate_convex_hull
+    A, b = generate_convex_hull(triangle, n_point=args.n_point)
 
     bestCP, bestF = ortel(
         A, b, d,
@@ -55,8 +65,10 @@ def main():
         batch=args.batch
     )
 
-    print(f"Seed {args.seed}: BestCP = {bestCP}, F ≈ {bestF}")
+    # Evitar símbolo ≈ en Windows
+    print(f"Seed {args.seed}: BestCP = {bestCP}, F ~= {bestF}")
 
+    # Guardar hull si F < threshold
     if args.save_hull_dir and bestF < args.f_threshold:
         os.makedirs(args.save_hull_dir, exist_ok=True)
         hull_path = os.path.join(
@@ -72,21 +84,11 @@ def main():
             F=bestF
         )
 
-    # Guardar fibras siempre que se indique la ruta
-    if args.save_fibers_dir:
-        os.makedirs(args.save_fibers_dir, exist_ok=True)
-        np.save(
-            os.path.join(
-                args.save_fibers_dir,
-                f"fibras_seed_{args.seed}_npoint_{args.n_point}.npy"
-            ),
-            verts
-        )
-
     # Guardar resultados individuales
     if args.out:
         write_header = not os.path.exists(args.out)
-        with open(args.out, "a", newline="") as f:
+        # CSV en UTF-8 para no pelear con acentos
+        with open(args.out, "a", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             if write_header:
                 writer.writerow(["n_point", "F", "bestcp"])

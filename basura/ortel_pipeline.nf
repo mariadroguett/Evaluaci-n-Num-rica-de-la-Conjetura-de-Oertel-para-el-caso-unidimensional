@@ -128,18 +128,17 @@ process run_ortel {
 
 // ==================== MERGE RESULTADOS ====================
 process merge_results {
-    publishDir "./", mode: 'overwrite'
-    echo true
+    publishDir "./", mode: 'copy'
 
     input:
-        file seed_csvs from run_ortel.out.collect()
+    file seed_csvs from run_ortel.out.collect()
 
     output:
-        file("${params.experiments_csv}")
+    file("${params.experiments_csv}")
 
     script:
     """
-    echo "Combinando resultados en ${params.experiments_csv}"
+    echo "Combinando resultados..."
     out_file=${params.experiments_csv}
     header_saved=false
     > \$out_file
@@ -151,6 +150,6 @@ process merge_results {
             tail -n +2 "\$f" >> \$out_file
         fi
     done
-    echo "Combinados \$(ls ${seed_csvs} | wc -l) archivos."
+    echo "Resultado final en \$out_file"
     """
 }

@@ -1,14 +1,13 @@
 import numpy as np
 
 def _choose_batch(n_ineq, target_mb=None):
-    """
-    Elige un tamaño de lote m para que lhs ≈ (m × n_ineq).
-    Aproximación: float64 -> 8 bytes por entrada.
-    """
+    """Elige tamaño de batch automático."""
+    if target_mb is None:
+        target_mb = 64  # valor por defecto, 64 MB
     bytes_target = int(target_mb * 1024 * 1024)
-    # Evita división por cero y asegura al menos 1
     m = max(1, bytes_target // (8 * max(1, n_ineq)))
     return int(m)
+
 
 def rejection_sampling(d, A, b, z, N, tol=1e-9, seed=None, batch=None, target_mb=None):
     """
