@@ -52,7 +52,7 @@ def main():
     ], dtype=float)
 
     # n_point aquí solo se usa como precisión de redondeo en generate_convex_hull
-    A, b = generate_convex_hull(triangle, n_point=args.n_point)
+    A, b = generate_convex_hull(verts, n_point=args.n_point)
 
     bestCP, bestF = ortel(
         A, b, d,
