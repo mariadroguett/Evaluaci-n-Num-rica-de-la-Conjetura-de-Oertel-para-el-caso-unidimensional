@@ -1,0 +1,19 @@
++ mkdir -p logs_slurm results results/hulls tmp_csv
++ module load apptainer
++ true
+++ pwd -P
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
++ whoami
++ hostname
++ pwd
++ command -v apptainer
++ true
++ apptainer --version
+/var/spool/slurm/d/job112333/slurm_script: line 22: apptainer: command not found
++ true
++ ls -lh /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
++ ls -lh main_ortel.py run_ortel_parallel.py
++ apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 -V
+/var/spool/slurm/d/job112333/slurm_script: line 27: apptainer: command not found

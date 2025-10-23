@@ -3,12 +3,12 @@ import os, sys, subprocess
 from pathlib import Path
 
 # ---- config mínima ----
-REPS        = 20           # 100 seeds por n_point
-N_POINTS    = [5]
+REPS        = 50           # 100 seeds por n_point
+N_POINTS    = [11]
 N           = 300000
-N_CP        = 50
-N_HIP       = 100
-N_PER_Z     = 5
+N_CP        = 100
+N_HIP       = 1000
+N_PER_Z     = 11
 D           = 2
 F_THRESHOLD = 0.18
 

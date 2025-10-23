@@ -3,15 +3,21 @@ From: python:3.9-slim
 
 %labels
     Author maria
-    Description "Entorno para Evaluación Numérica de la Conjetura de Oertel"
+    Description "Entorno Singularity para Evaluación Numérica de la Conjetura de Oertel"
 
 %environment
     export PYTHONPATH=/opt/app:${PYTHONPATH}
+    export OMP_NUM_THREADS=1
+    export OPENBLAS_NUM_THREADS=1
+    export MKL_NUM_THREADS=1
+    export NUMEXPR_MAX_THREADS=1
+    export PYTHONUTF8=1
+    export PYTHONIOENCODING=utf-8
 
 %post
     set -eux
     apt-get update
-    apt-get install -y --no-install-recommends build-essential
+    apt-get install -y --no-install-recommends build-essential python3-dev
     rm -rf /var/lib/apt/lists/*
     mkdir -p /opt/app
     python -m pip install --upgrade pip
@@ -22,4 +28,5 @@ From: python:3.9-slim
     . /opt/app
 
 %runscript
-    exec python /opt/app/main_ortel.py "$@"
+    exec python /opt/app/run_ortel_parallel.py "$@"
+

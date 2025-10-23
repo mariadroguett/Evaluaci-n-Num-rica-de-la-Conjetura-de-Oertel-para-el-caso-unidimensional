@@ -1,0 +1,42 @@
++ mkdir -p logs_slurm results results/hulls tmp_csv
++ module load apptainer
++ true
++ module load singularity
++ true
+++ command -v apptainer
+++ true
++ CTR=
++ [[ -z '' ]]
+++ command -v singularity
++ CTR=/usr/bin/singularity
++ [[ -z /usr/bin/singularity ]]
++ echo 'Usando contenedor con: /usr/bin/singularity'
+++ pwd -P
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
++ whoami
++ hostname
++ pwd
++ ls -lh /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
++ ls -lh main_ortel.py run_ortel_parallel.py
++ /usr/bin/singularity exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif bash -lc 'python3 -V || python -V'
++ /usr/bin/singularity exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif bash -lc 'ls -lh /workspace | head -n 50'
++ /usr/bin/singularity exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif bash -lc 'python3 /workspace/main_ortel.py \
+    --seed 1 --n_point 5 --d 2 --N 20000 --N_cp 10 --N_hip 50 \
+    --f_threshold 0.18 \
+    --save_hull_dir /workspace/results/hulls \
+    --out /workspace/tmp_csv/smoke_seed1.csv || \
+    python /workspace/main_ortel.py \
+    --seed 1 --n_point 5 --d 2 --N 20000 --N_cp 10 --N_hip 50 \
+    --f_threshold 0.18 \
+    --save_hull_dir /workspace/results/hulls \
+    --out /workspace/tmp_csv/smoke_seed1.csv'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

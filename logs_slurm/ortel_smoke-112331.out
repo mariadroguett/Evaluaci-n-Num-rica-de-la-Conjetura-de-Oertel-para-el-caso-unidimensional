@@ -1,0 +1,17 @@
+== who/host/pwd ==
+mdroguett
+host05
+/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
+== apptainer ==
+++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash load apptainer
+ERROR: Unable to locate a modulefile for 'apptainer'
++ eval 'test 0 = 1;'
+++ test 0 = 1
++ _mlstatus=1
++ return 1
+== archivos en submit dir ==
+-rwxr-xr-x. 1 mdroguett puoh 230M Oct 21 13:39 /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
+-rw-r--r--. 1 mdroguett puoh 3.1K Oct 21 09:48 main_ortel.py
+-rwxr-xr-x. 1 mdroguett puoh 230M Oct 21 13:39 ortel.sif
+-rw-r--r--. 1 mdroguett puoh 1.9K Oct 21 11:55 run_ortel_parallel.py
+== probar python dentro del contenedor ==

@@ -19,7 +19,7 @@ def parse_args():
     parser.add_argument('--n_per_z', type=int, default=15)
     parser.add_argument('--d', type=int, default=2)
     parser.add_argument('--n_point', type=int, default=5)
-    parser.add_argument('--z_vals', nargs='+', type=float, default=[0, 1])
+    parser.add_argument('--z_vals', nargs='+', type=float, default=[0, 1, 2])
     parser.add_argument('--N', type=int, default=3*10**5)
     parser.add_argument('--N_cp', type=int, default=100)
     parser.add_argument('--N_hip', type=int, default=10000)
