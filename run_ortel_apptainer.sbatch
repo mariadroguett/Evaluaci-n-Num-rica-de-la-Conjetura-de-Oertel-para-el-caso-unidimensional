@@ -2,9 +2,9 @@
 #SBATCH -J ortel_run
 #SBATCH -p ngen-ko                # partición del cluster
 #SBATCH -N 1
-#SBATCH --cpus-per-task=4         # núcleos por tarea
-#SBATCH --mem=6G                  # memoria total
-#SBATCH -t 06:00:00               # tiempo máximo
+#SBATCH --cpus-per-task=16         # núcleos por tarea
+#SBATCH --mem=24G                  # memoria total
+#SBATCH -t 72:00:00               # tiempo máximo
 #SBATCH -o logs_slurm/%x-%j.out   # salida estándar
 #SBATCH -e logs_slurm/%x-%j.err   # errores
 

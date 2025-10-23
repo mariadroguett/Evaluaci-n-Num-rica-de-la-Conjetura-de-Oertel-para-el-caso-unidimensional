@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-import os, sys, subprocess
+import os, sys, subprocess, csv
 from pathlib import Path
 
 # ---- config mínima ----
-REPS        = 50           # 100 seeds por n_point
-N_POINTS    = [11]
+REPS        = 100           # 100 seeds por n_point
+N_POINTS    = [5]           # puedes poner [5, 8] si quieres dos tandas
 N           = 300000
 N_CP        = 100
 N_HIP       = 1000
-N_PER_Z     = 11
+N_PER_Z     = 5
 D           = 2
 F_THRESHOLD = 0.18
 
@@ -18,6 +18,21 @@ MAIN        = PROJECT_DIR / "main_ortel.py"
 RESULTS_DIR = PROJECT_DIR / "results"
 HULLS_DIR   = RESULTS_DIR / "hulls"
 CSV_GLOBAL  = RESULTS_DIR / "experiments.csv"
+
+def ensure_dirs():
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    HULLS_DIR.mkdir(parents=True, exist_ok=True)
+
+def csv_has_row(csv_path: Path, seed: int, n_point: int) -> bool:
+    """
+    Evita duplicados si relanzas: chequea si ya existe una fila con ese n_point y seed.
+    (Tu main escribe columnas: ["n_point","F","bestcp"], no incluye seed.
+     Si quieres chequeo perfecto, agrega seed a tu main. Por ahora, solo prevenimos repetir
+     si el archivo existe y ya corrimos todas las seeds: dejamos esta función por si luego amplías.)
+    """
+    # Con el formato actual del CSV no podemos saber el seed, así que devolvemos False siempre.
+    # Si decides agregar 'seed' a tu main, implementa el chequeo acá.
+    return False
 
 def run_one(seed: int, n_point: int) -> int:
     cmd = [
@@ -33,23 +48,36 @@ def run_one(seed: int, n_point: int) -> int:
         "--save_hull_dir", str(HULLS_DIR),
         "--out", str(CSV_GLOBAL),
     ]
-    # imprime algo breve para seguir el avance
     print(f"[RUN] seed={seed} n_point={n_point}")
     return subprocess.call(cmd, cwd=PROJECT_DIR)
 
 def main():
+    # UTF-8 siempre
+    os.environ.setdefault("PYTHONUTF8", "1")
+    os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+
     if not MAIN.exists():
         print(f"[FATAL] No encuentro main_ortel.py en {MAIN}", file=sys.stderr)
         sys.exit(2)
 
-    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    HULLS_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_dirs()
 
     total = len(N_POINTS) * REPS
     done_ok = done_err = 0
 
+    # Cabecera del CSV si no existe aún
+    if not CSV_GLOBAL.exists():
+        with CSV_GLOBAL.open("w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["n_point", "F", "bestcp"])
+
     for n_point in N_POINTS:
         for seed in range(1, REPS + 1):
+            # si implementas seed en el CSV, aquí podrías saltar si ya existe
+            if csv_has_row(CSV_GLOBAL, seed, n_point):
+                print(f"[SKIP] ya registrado seed={seed} n_point={n_point}")
+                continue
+
             rc = run_one(seed, n_point)
             if rc == 0:
                 done_ok += 1
@@ -63,3 +91,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

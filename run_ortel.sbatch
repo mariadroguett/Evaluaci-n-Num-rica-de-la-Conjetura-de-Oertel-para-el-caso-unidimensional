@@ -40,7 +40,7 @@ apptainer exec --bind "$ROOT":"$WORK" "$SIF" bash -lc 'ls -lh /workspace | head 
 echo "== SMOKE: 1 corrida mini =="
 apptainer exec --bind "$ROOT":"$WORK" "$SIF" \
   bash -lc 'python3 /workspace/main_ortel.py \
-    --seed 1 --n_point 5 --d 2 --N 20000 --N_cp 10 --N_hip 50 \
+    --seed 1 --n_point 5 --d 2 --N 300000 --N_cp 100 --N_hip 1000 \
     --f_threshold 0.18 \
     --save_hull_dir /workspace/results/hulls \
     --out /workspace/tmp_csv/smoke_seed1.csv || \
