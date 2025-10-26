@@ -1,37 +1,48 @@
 #!/bin/bash
 #SBATCH -J ortel_run
-#SBATCH -p ngen-ko                # partición del cluster
+#SBATCH -p ngen-ko
 #SBATCH -N 1
-#SBATCH --cpus-per-task=16         # núcleos por tarea
-#SBATCH --mem=24G                  # memoria total
-#SBATCH -t 72:00:00               # tiempo máximo
-#SBATCH -o logs_slurm/%x-%j.out   # salida estándar
-#SBATCH -e logs_slurm/%x-%j.err   # errores
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=16G
+#SBATCH -t 24:00:00
+#SBATCH -o logs_slurm/%x-%j.out
+#SBATCH -e logs_slurm/%x-%j.err
 
-set -euo pipefail
-set -x  # imprime los comandos para debug
+# Mejor: sin -u, o usa defaults al leer variables
+set -eo pipefail
 
-# Crear carpetas si no existen
 mkdir -p logs_slurm results tmp_csv results/hulls
 
-# Limitar paralelismo de BLAS/OpenMP dentro del contenedor
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export OPENBLAS_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export NUMEXPR_MAX_THREADS=$SLURM_CPUS_PER_TASK
+# Evitar oversubscription
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export OPENBLAS_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export MKL_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export NUMEXPR_MAX_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export PYTHONUNBUFFERED=1
+export PYTHONIOENCODING=utf-8
 
-# Directorio actual y contenedor
 ROOT="$PWD"
 WORK="/workspace"
 SIF="$ROOT/ortel.sif"
 
-echo "=== Ejecutando en nodo $(hostname) ==="
-echo "Directorio de trabajo: $ROOT"
-echo "Usando contenedor: $SIF"
-echo "==============================="
+echo "=== Nodo: $(hostname) ==="
+echo "CPUs: ${SLURM_CPUS_PER_TASK:-?}   Mem: ${SLURM_MEM_PER_NODE:-?}   Time: ${SLURM_TIMELIMIT:-?}"
+echo "Contenedor: $SIF"
+echo "========================="
 
-# Ejecutar el experimento dentro del contenedor
-apptainer exec --bind "$ROOT":"$WORK" "$SIF" \
-  python3 /workspace/run_ortel_parallel.py
+# Opcional: limitar workers internos
+# export MAX_WORKERS=${SLURM_CPUS_PER_TASK:-4}
 
-echo "=== Ejecución completada ==="
+if command -v apptainer >/dev/null 2>&1; then
+  APPT=apptainer
+elif command -v singularity >/dev/null 2>&1; then
+  APPT=singularity
+else
+  echo "[FATAL] No encuentro apptainer/singularity en el nodo" >&2
+  exit 127
+fi
+
+$APPT exec --bind "$ROOT":"$WORK" "$SIF" \
+  python3 -u /workspace/run_ortel_parallel.py
+
+echo "=== FIN ==="
