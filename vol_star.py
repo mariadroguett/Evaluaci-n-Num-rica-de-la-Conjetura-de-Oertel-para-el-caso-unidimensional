@@ -4,7 +4,7 @@ from vol_reject import rejection_sampling
 
 def ratio_cp(
     A, b, cp_full, d, z_vals, N_hip, N,
-    tol=1e-9, seed=None, batch=None, guided=False
+    tol=1e-9, seed=None, batch=None
 ):
     """
     PEOR volumen NO normalizado de cortes H que pasan por cp.
@@ -20,7 +20,7 @@ def ratio_cp(
     if cp_full.size != 1 + d:
         raise ValueError(f"cp_full debe tener tamaño 1+d={1+d}, recibido {cp_full.size}.")
 
-    # 1) Volúmenes por fibra (a_z)
+    # (1) Volúmenes por fibra
     a_z = {}
     for zi in z_vals:
         seed_z = rng.integers(2**63 - 1)
@@ -29,7 +29,7 @@ def ratio_cp(
     if volS <= 0.0:
         return 0.0
 
-    # 2) Direcciones 
+    # (2) Direcciones aleatorias unitarias
     def _rand_u():
         v = rng.integers(0, 2, size=1 + d) * 2 - 1
         u = v.astype(float)
@@ -38,7 +38,7 @@ def ratio_cp(
 
     directions = [_rand_u() for _ in range(N_hip)]
 
-    # 3) Evaluación por dirección
+    # (3) Evaluación en cada dirección
     worst = float('inf')
     for u in directions:
         A_aug = np.vstack([A, -u.reshape(1, -1)])
@@ -55,7 +55,7 @@ def ratio_cp(
 
         if val_u < worst:
             worst = val_u
-            if worst <= 1e-12:  # early exit si ya es prácticamente 0
+            if worst <= 1e-12:  # early exit
                 break
 
     return float(worst)  # normaliza afuera: F(cp)=worst / sum(a_z)

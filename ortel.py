@@ -1,59 +1,71 @@
+# vol_reject.py
 import numpy as np
-from vol_reject import rejection_sampling
-from vol_star import ratio_cp
-from numpy.linalg import norm
 
-def _inside(A, b, x, tol=1e-9):
-    return np.all((A @ x) <= b + tol)
+def _choose_batch(n_ineq: int, target_mb: float | None) -> int:
+    """Elige tamaño de lote aproximando memoria ~ target_mb MiB para lhs."""
+    if target_mb is None:
+        target_mb = 64.0  # por defecto
+    bytes_target = int(target_mb * 1024 * 1024)
+    # lhs es (m, n_ineq) de float64 => 8 bytes * m * n_ineq
+    m = bytes_target // (8 * max(1, n_ineq))
+    return max(1, int(m))
 
-def ortel(
-    A, b, d,
-    z_vals=None,
-    N_cp=50, N_hip=1000, N=80000,
-    tol=1e-9, seed=None,
-    batch=None, guided=False,
-    max_trials_per_cp=200
-):
+def rejection_sampling(
+    d: int,
+    A: np.ndarray,
+    b: np.ndarray,
+    z: int | float,
+    N: int,
+    tol: float = 1e-9,
+    seed: int | None = None,
+    batch: int | None = None,
+    target_mb: float | None = None,
+) -> float:
     """
-    Busca un centerpoint aproximado maximizando F(cp) = (peor corte)/Vol(S).
+    Estima Vol_rel(S_z) = P_p[(z,p) ∈ C] con p ~ U([0,1]^d), donde C = {x: A x ≤ b}.
+    - Trabaja por fibra fija z (mixto entero); sólo muestrea p en [0,1]^d.
+    - Control de memoria por lotes (batch) o memoria objetivo (target_mb).
+
+    Retorna:
+        float en [0,1]: proporción aceptada en la fibra z.
     """
+    d = int(d); N = int(N)
+    if N <= 0 or d <= 0:
+        return 0.0
+
+    A = np.asarray(A, dtype=float)
+    b = np.asarray(b, dtype=float)
+    if A.ndim != 2 or A.shape[1] != 1 + d:
+        raise ValueError(f"A debe tener 1+d columnas (tiene {A.shape[1]}), con d={d}.")
+
     rng = np.random.default_rng(seed)
-    if z_vals is None:
-        z_vals = [0, 1]
-    z_vals = list(z_vals)
+    z_val = float(int(z))
 
-    # (1) Volumen total Vol(S)
-    a_z = {}
-    for zi in z_vals:
-        seed_z = rng.integers(2**63 - 1)
-        a_z[zi] = rejection_sampling(d, A, b, zi, N, tol=tol, seed=seed_z, batch=batch)
-    vol_total = float(sum(a_z.values()))
-    if vol_total <= 0.0:
-        raise ValueError("Volumen total nulo. Revisa A,b,z_vals o aumenta N.")
+    # Descomponer A = [A0 | Ap] y desplazar por z
+    A0 = A[:, 0]
+    Ap = A[:, 1:]
+    b_shift = b - A0 * z_val
+    n_ineq = A.shape[0]
+    ApT = Ap.T  # para @ rápido
 
-    bestF, bestCP = -np.inf, None
+    # Lote automático si no se especifica
+    if batch is None:
+        m_auto = _choose_batch(n_ineq, target_mb)
+        batch = min(N, max(1000, m_auto))  # buen mínimo
+    else:
+        batch = max(1, int(batch))
 
-    # (2) Generar y evaluar N_cp candidatos dentro de S
-    num_tested, trials = 0, 0
-    while num_tested < N_cp and trials < N_cp * max_trials_per_cp:
-        trials += 1
-        zi = int(rng.choice(z_vals))
-        p  = rng.random(d)
-        cand = np.hstack([zi, p]).astype(float)
+    aceptados = 0
+    generados = 0
 
-        if not _inside(A, b, cand, tol=tol):
-            continue
+    while generados < N:
+        m = min(batch, N - generados)
+        # p ~ U([0,1]^d)
+        P = rng.random((m, d))                 # (m, d)
+        # Ap p <= b_shift + tol  ⇒  (P @ ApT) <= b_shift
+        lhs = P @ ApT                           # (m, n_ineq)
+        inside = np.all(lhs <= (b_shift + tol), axis=1)
+        aceptados += int(inside.sum())
+        generados += m
 
-        seed_ratio = rng.integers(2**63 - 1)
-        peor_vol = ratio_cp(
-            A, b, cand, d, z_vals, N_hip, N,
-            tol=tol, seed=seed_ratio, batch=batch, guided=guided
-        )
-        F_cand = peor_vol / vol_total
-        if F_cand > bestF:
-            bestF, bestCP = float(F_cand), cand.copy()
-        num_tested += 1
-
-    if bestCP is None:
-        raise RuntimeError("No se aceptaron candidatos dentro de S. Revisa la geometría o aumenta max_trials_per_cp.")
-    return bestCP, bestF
+    return aceptados / float(N)
