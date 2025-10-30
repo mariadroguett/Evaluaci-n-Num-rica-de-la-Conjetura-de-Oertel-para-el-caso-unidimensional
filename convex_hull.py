@@ -1,18 +1,24 @@
 import numpy as np
 from scipy.spatial import ConvexHull
 
-def random_vertices_by_fiber(d, z_vals, n_per_z):
-    """Genera vértices aleatorios por fibra z."""
-    all_points = []
-    for z in z_vals:
-        pts = np.random.rand(n_per_z, d)
-        pts_z = np.column_stack((np.full(n_per_z, z), pts))
-        all_points.append(pts_z)
-    return np.vstack(all_points)
+def random_vertices_by_fiber(d, z_vals, n_per_z, seed=None):
+    """
+    Genera vértices aleatorios por fibra z en [0,1]^d.
+    """
+    import numpy as np
+    rng = np.random.default_rng(seed)
 
-def generate_convex_hull(points):
+    vertices = []
+    for z in z_vals:
+        pts = rng.random((n_per_z, d))
+        verts_z = np.column_stack([np.full(n_per_z, z), pts])
+        vertices.append(verts_z)
+
+    return np.vstack(vertices)
+
+def generate_convex_hull(verts):
     """Devuelve A,b de la envolvente convexa."""
-    hull = ConvexHull(points)
+    hull = ConvexHull(verts)
     A = hull.equations[:, :-1]
     b = -hull.equations[:, -1]
     return A, b

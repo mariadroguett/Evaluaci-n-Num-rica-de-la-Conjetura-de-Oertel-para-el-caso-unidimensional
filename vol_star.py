@@ -1,61 +1,163 @@
+# vol_star.py
 import numpy as np
-from numpy.linalg import norm
-from vol_reject import rejection_sampling 
 
-def ratio_cp(
-    A, b, cp_full, d, z_vals, N_hip, N,
-    tol=1e-9, seed=None, batch=None
-):
+def _choose_batch(n_ineq, target_mb=None):
+    """Tamaño de lote automático dado #inequaciones y una meta de memoria (MiB)."""
+    if target_mb is None:
+        target_mb = 64  # ~64 MiB por defecto
+    bytes_target = int(target_mb * 1024 * 1024)
+    # Cada muestra ocupa ~ 8 * n_ineq bytes al multiplicar contra A (float64)
+    m = max(1, bytes_target // (8 * max(1, n_ineq)))
+    return int(m)
+
+
+def _fiber_vol_est(d, A, b, z, N, tol=1e-9, seed=None, batch=None, target_mb=None):
     """
-    PEOR volumen NO normalizado de cortes H que pasan por cp.
-    - a_z = Vol(S_z) con rejection_sampling(...)
-    - Para cada dirección u: añadimos -u^T x <= -u^T cp, re-muestreamos y
-      sumamos a_z * min(frac, 1-frac). Tomamos el mínimo sobre u.
+    Estima Vol_rel(S_z) = P[(z,p) ∈ C] con p ~ U([0,1]^d), i.e., volumen relativo en la fibra z.
+    Devuelve un número en [0,1].
     """
-    rng = np.random.default_rng(seed)
-
-    cp_full = np.asarray(cp_full, float)
-    d = int(d); N = int(N); N_hip = int(N_hip)
-    z_vals = list(z_vals)
-    if cp_full.size != 1 + d:
-        raise ValueError(f"cp_full debe tener tamaño 1+d={1+d}, recibido {cp_full.size}.")
-
-    # (1) Volúmenes por fibra
-    a_z = {}
-    for zi in z_vals:
-        seed_z = rng.integers(2**63 - 1)
-        a_z[zi] = rejection_sampling(d, A, b, zi, N, tol=tol, seed=seed_z, batch=batch)
-    volS = sum(a_z.values())
-    if volS <= 0.0:
+    d = int(d); N = int(N)
+    if N <= 0 or d <= 0:
         return 0.0
 
-    # (2) Direcciones aleatorias unitarias
-    def _rand_u():
-        v = rng.integers(0, 2, size=1 + d) * 2 - 1
-        u = v.astype(float)
-        u /= (norm(u) + 1e-12)
-        return u
+    A = np.asarray(A, float)
+    b = np.asarray(b, float)
+    if A.shape[1] != 1 + d:
+        raise ValueError(f"A tiene {A.shape[1]} columnas; d={d} ⇒ 1+d={1+d}.")
 
-    directions = [_rand_u() for _ in range(N_hip)]
+    rng = np.random.default_rng(seed)
+    z_val = float(int(z))
 
-    # (3) Evaluación en cada dirección
-    worst = float('inf')
-    for u in directions:
-        A_aug = np.vstack([A, -u.reshape(1, -1)])
-        b_aug = np.hstack([b, -float(u @ cp_full)])
+    Ap = A[:, 1:]                  # (#ineq, d)
+    b_shift = b - A[:, 0] * z_val  # (#ineq,)
+    n_ineq = A.shape[0]
 
-        val_u = 0.0
-        for zi in z_vals:
-            if a_z[zi] <= 0.0:
-                continue
-            seed_cut = rng.integers(2**63 - 1)
-            vol_cut  = rejection_sampling(d, A_aug, b_aug, zi, N, tol=tol, seed=seed_cut, batch=batch)
-            frac     = vol_cut / (a_z[zi] + 1e-12)
-            val_u   += a_z[zi] * min(frac, 1.0 - frac)
+    if batch is None:
+        m_auto = _choose_batch(n_ineq, target_mb=target_mb)
+        batch = min(N, max(1000, m_auto))
+    else:
+        batch = int(batch)
+        if batch <= 0:
+            batch = min(N, max(1000, _choose_batch(n_ineq, target_mb=target_mb)))
 
-        if val_u < worst:
-            worst = val_u
-            if worst <= 1e-12:  # early exit
-                break
+    aceptados = 0
+    gen = 0
+    while gen < N:
+        m = min(batch, N - gen)
+        p = rng.random((m, d))                # (m, d)
+        lhs = p @ Ap.T                        # (m, #ineq)
+        inside = np.all(lhs <= (b_shift + tol), axis=1)
+        aceptados += int(inside.sum())
+        gen += m
 
-    return float(worst)  # normaliza afuera: F(cp)=worst / sum(a_z)
+    return aceptados / float(N)
+
+
+def ratio_cp(
+    A, b, cp, z_vals, N_hip, d, N,
+    tol=1e-9, seed=None, batch=None, target_mb=None
+):
+    """
+    Estima F(cp) = min_u [ sum_z min(Vol(S_z ∩ H_u^+), Vol(S_z ∩ H_u^-)) ] / sum_z Vol(S_z),
+    donde H_u es el hiperplano que pasa por cp con normal u (solo en coordenadas continuas).
+
+    Parámetros
+    ----------
+    A, b      : descripción Ax ≤ b de conv(V) en R^{1+d}, normalizada hacia el interior.
+    cp        : array (1+d,) centerpoint candidato -> cp = (z_cp, p_cp). Usamos solo p_cp = cp[1:].
+    z_vals    : iterables de enteros (fibras).
+    N_hip     : nº de direcciones aleatorias (hiperplanos) a probar.
+    d         : dimensión continua.
+    N         : nº de muestras Monte Carlo por (z, dirección) para estimar el corte.
+    tol       : tolerancia Ax ≤ b.
+    seed      : semilla RNG.
+    batch     : tamaño de lote (opcional). Si None, se elige automáticamente.
+    target_mb : memoria objetivo aprox (MiB) para calcular batch si batch=None.
+
+    Retorna
+    -------
+    F_est : float en [0, 0.5] aprox (por simetría de min lado).
+    """
+    A = np.asarray(A, float)
+    b = np.asarray(b, float)
+    cp = np.asarray(cp, float)
+
+    if A.shape[1] != 1 + d:
+        raise ValueError(f"A tiene {A.shape[1]} columnas; d={d} ⇒ 1+d={1+d}.")
+    if cp.shape[0] != 1 + d:
+        raise ValueError("cp debe tener dimensión 1+d (incluyendo la coordenada z).")
+
+    rng = np.random.default_rng(seed)
+    p_cp = cp[1:]  # parte continua del cp (en [0,1]^d idealmente)
+
+    # Precompute estructura por fibra (no depende de u)
+    Ap = A[:, 1:]  # (#ineq, d)
+    n_ineq = A.shape[0]
+
+    # Volumen total (denominador): sum_z Vol_rel(S_z)
+    vols = {}
+    for z in z_vals:
+        vols[int(z)] = _fiber_vol_est(d, A, b, z, N, tol=tol,
+                                      seed=rng.integers(1<<63), batch=batch, target_mb=target_mb)
+    vol_total = sum(vols.values())
+    if vol_total <= 0:
+        return 0.0
+
+    # Tamaño de lote para el muestreo por dirección
+    if batch is None:
+        m_auto = _choose_batch(n_ineq, target_mb=target_mb)
+        batch = min(N, max(1000, m_auto))
+    else:
+        batch = int(batch)
+        if batch <= 0:
+            batch = min(N, max(1000, _choose_batch(n_ineq, target_mb=target_mb)))
+
+    worst_ratio = 1.0  # buscamos el mínimo sobre direcciones
+
+    for _ in range(int(N_hip)):
+        # normal aleatoria en R^d (solo sobre coords continuas)
+        u = rng.normal(size=d)
+        nu = np.linalg.norm(u)
+        if nu < 1e-15:
+            continue
+        u /= nu
+
+        # Para esta dirección, estimamos sum_z min(Vol^+, Vol^-)
+        sum_min_sides = 0.0
+
+        for z in z_vals:
+            z_val = float(int(z))
+            b_shift = b - A[:, 0] * z_val  # (#ineq,)
+            acc_pos = 0
+            acc_neg = 0
+            gen = 0
+
+            # Monte Carlo por lotes en p ~ U([0,1]^d)
+            while gen < N:
+                m = min(batch, N - gen)
+                p = rng.random((m, d))
+                # Dentro del poliedro de la fibra:
+                inside = np.all((p @ Ap.T) <= (b_shift + tol), axis=1)
+                if inside.any():
+                    # lado respecto del hiperplano que pasa por p_cp
+                    side_val = (p[inside] - p_cp) @ u  # (k,)
+                    acc_pos += int((side_val >= 0).sum())
+                    acc_neg += int((side_val < 0).sum())
+                gen += m
+
+            # min de ambos lados, normalizado por muestras que cayeron dentro
+            acc_tot = acc_pos + acc_neg
+            if acc_tot > 0:
+                min_side = min(acc_pos, acc_neg) / float(N)  # N es total de muestras por z
+            else:
+                min_side = 0.0
+
+            # Esto aproxima min(Vol(S_z∩H+), Vol(S_z∩H-)) con Monte Carlo relativo a [0,1]^d
+            sum_min_sides += min_side
+
+        # ratio para esta dirección (normalizamos por Vol_total)
+        ratio_u = sum_min_sides / max(vol_total, 1e-16)
+        if ratio_u < worst_ratio:
+            worst_ratio = ratio_u
+
+    return float(worst_ratio)

@@ -1,0 +1,2724 @@
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
++ mkdir -p logs_slurm results tmp_csv results/hulls
+++ command -v apptainer
++ APPT=/usr/bin/apptainer
++ [[ -z /usr/bin/apptainer ]]
++ export OMP_NUM_THREADS=16
++ OMP_NUM_THREADS=16
++ export OPENBLAS_NUM_THREADS=16
++ OPENBLAS_NUM_THREADS=16
++ export MKL_NUM_THREADS=16
++ MKL_NUM_THREADS=16
++ export NUMEXPR_MAX_THREADS=16
++ NUMEXPR_MAX_THREADS=16
++ export SLURM_CPUS_PER_TASK
+++ hostname
++ echo '=== Nodo: dungu ==='
++ echo 'CPUs: 16   Mem: 16384   Time: '
++ echo 'Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif'
++ echo =========================
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 -V
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 /workspace/run_ortel_parallel.py
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=16 n_point=5 rc=2
+[ERR] seed=9 n_point=5 rc=2
+[ERR] seed=14 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=6 n_point=5 rc=2
+[ERR] seed=3 n_point=5 rc=2
+[ERR] seed=2 n_point=5 rc=2
+[ERR] seed=10 n_point=5 rc=2
+[ERR] seed=4 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=13 n_point=5 rc=2
+[ERR] seed=15 n_point=5 rc=2
+[ERR] seed=8 n_point=5 rc=2
+[ERR] seed=11 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=5 n_point=5 rc=2
+[ERR] seed=1 n_point=5 rc=2
+[ERR] seed=7 n_point=5 rc=2
+[ERR] seed=12 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=18 n_point=5 rc=2
+[ERR] seed=17 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=26 n_point=5 rc=2
+[ERR] seed=24 n_point=5 rc=2
+[ERR] seed=25 n_point=5 rc=2
+[ERR] seed=20 n_point=5 rc=2
+[ERR] seed=19 n_point=5 rc=2
+[ERR] seed=22 n_point=5 rc=2
+[ERR] seed=21 n_point=5 rc=2
+[ERR] seed=23 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=28 n_point=5 rc=2
+[ERR] seed=27 n_point=5 rc=2
+[ERR] seed=29 n_point=5 rc=2
+[ERR] seed=32 n_point=5 rc=2
+[ERR] seed=30 n_point=5 rc=2
+[ERR] seed=31 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=37 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=34 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=33 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=38 n_point=5 rc=2
+[ERR] seed=36 n_point=5 rc=2
+[ERR] seed=40 n_point=5 rc=2
+[ERR] seed=35 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=44 n_point=5 rc=2
+[ERR] seed=41 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=39 n_point=5 rc=2
+[ERR] seed=42 n_point=5 rc=2
+[ERR] seed=43 n_point=5 rc=2
+[ERR] seed=45 n_point=5 rc=2
+[ERR] seed=47 n_point=5 rc=2
+[ERR] seed=48 n_point=5 rc=2
+[ERR] seed=46 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=49 n_point=5 rc=2
+[ERR] seed=51 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=54 n_point=5 rc=2
+[ERR] seed=50 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=55 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=53 n_point=5 rc=2
+[ERR] seed=52 n_point=5 rc=2
+[ERR] seed=61 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=60 n_point=5 rc=2
+[ERR] seed=56 n_point=5 rc=2
+[ERR] seed=57 n_point=5 rc=2
+[ERR] seed=59 n_point=5 rc=2
+[ERR] seed=58 n_point=5 rc=2
+[ERR] seed=64 n_point=5 rc=2
+[ERR] seed=62 n_point=5 rc=2
+[ERR] seed=63 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=67 n_point=5 rc=2
+[ERR] seed=65 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=69 n_point=5 rc=2
+[ERR] seed=68 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=66 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=71 n_point=5 rc=2
+[ERR] seed=73 n_point=5 rc=2
+[ERR] seed=72 n_point=5 rc=2
+[ERR] seed=70 n_point=5 rc=2
+[ERR] seed=77 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=75 n_point=5 rc=2
+[ERR] seed=76 n_point=5 rc=2
+[ERR] seed=74 n_point=5 rc=2
+[ERR] seed=78 n_point=5 rc=2
+[ERR] seed=79 n_point=5 rc=2
+[ERR] seed=80 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=81 n_point=5 rc=2
+[ERR] seed=82 n_point=5 rc=2
+[ERR] seed=83 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=84 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=86 n_point=5 rc=2
+[ERR] seed=85 n_point=5 rc=2
+[ERR] seed=87 n_point=5 rc=2
+[ERR] seed=89 n_point=5 rc=2
+[ERR] seed=88 n_point=5 rc=2
+[ERR] seed=91 n_point=5 rc=2
+[ERR] seed=90 n_point=5 rc=2
+[ERR] seed=95 n_point=5 rc=2
+[ERR] seed=93 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=92 n_point=5 rc=2
+[ERR] seed=94 n_point=5 rc=2
+[ERR] seed=96 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=97 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=98 n_point=5 rc=2
+[ERR] seed=100 n_point=5 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=99 n_point=5 rc=2
+[ERR] seed=4 n_point=8 rc=2
+[ERR] seed=2 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=7 n_point=8 rc=2
+[ERR] seed=6 n_point=8 rc=2
+[ERR] seed=9 n_point=8 rc=2
+[ERR] seed=8 n_point=8 rc=2
+[ERR] seed=3 n_point=8 rc=2
+[ERR] seed=1 n_point=8 rc=2
+[ERR] seed=5 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=10 n_point=8 rc=2
+[ERR] seed=11 n_point=8 rc=2
+[ERR] seed=12 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=15 n_point=8 rc=2
+[ERR] seed=13 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=17 n_point=8 rc=2
+[ERR] seed=16 n_point=8 rc=2
+[ERR] seed=14 n_point=8 rc=2
+[ERR] seed=18 n_point=8 rc=2
+[ERR] seed=19 n_point=8 rc=2
+[ERR] seed=20 n_point=8 rc=2
+[ERR] seed=27 n_point=8 rc=2
+[ERR] seed=25 n_point=8 rc=2
+[ERR] seed=22 n_point=8 rc=2
+[ERR] seed=23 n_point=8 rc=2
+[ERR] seed=26 n_point=8 rc=2
+[ERR] seed=21 n_point=8 rc=2
+[ERR] seed=24 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=28 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=30 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=29 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=35 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=32 n_point=8 rc=2
+[ERR] seed=31 n_point=8 rc=2
+[ERR] seed=33 n_point=8 rc=2
+[ERR] seed=36 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=40 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=38 n_point=8 rc=2
+[ERR] seed=34 n_point=8 rc=2
+[ERR] seed=41 n_point=8 rc=2
+[ERR] seed=37 n_point=8 rc=2
+[ERR] seed=42 n_point=8 rc=2
+[ERR] seed=43 n_point=8 rc=2
+[ERR] seed=39 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=44 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=46 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=45 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=48 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=52 n_point=8 rc=2
+[ERR] seed=47 n_point=8 rc=2
+[ERR] seed=51 n_point=8 rc=2
+[ERR] seed=50 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=53 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=49 n_point=8 rc=2
+[ERR] seed=54 n_point=8 rc=2
+[ERR] seed=56 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=55 n_point=8 rc=2
+[ERR] seed=58 n_point=8 rc=2
+[ERR] seed=57 n_point=8 rc=2
+[ERR] seed=59 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=60 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+[ERR] seed=61 n_point=8 rc=2
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=65 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=68 n_point=8 rc=2
+[ERR] seed=62 n_point=8 rc=2
+[ERR] seed=63 n_point=8 rc=2
+[ERR] seed=64 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=69 n_point=8 rc=2
+[ERR] seed=71 n_point=8 rc=2
+[ERR] seed=70 n_point=8 rc=2
+[ERR] seed=67 n_point=8 rc=2
+[ERR] seed=66 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=72 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=73 n_point=8 rc=2
+[ERR] seed=74 n_point=8 rc=2
+[ERR] seed=75 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=76 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=77 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=80 n_point=8 rc=2
+[ERR] seed=79 n_point=8 rc=2
+[ERR] seed=81 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=88 n_point=8 rc=2
+[ERR] seed=83 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=85 n_point=8 rc=2
+[ERR] seed=82 n_point=8 rc=2
+[ERR] seed=86 n_point=8 rc=2
+[ERR] seed=78 n_point=8 rc=2
+[ERR] seed=87 n_point=8 rc=2
+[ERR] seed=84 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=90 n_point=8 rc=2
+[ERR] seed=89 n_point=8 rc=2
+[ERR] seed=91 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=92 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=93 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=95 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=94 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=100 n_point=8 rc=2
+[ERR] seed=98 n_point=8 rc=2
+[ERR] seed=96 n_point=8 rc=2
+[ERR] seed=99 n_point=8 rc=2
+[ERR] seed=97 n_point=8 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=4 n_point=11 rc=2
+[ERR] seed=1 n_point=11 rc=2
+[ERR] seed=2 n_point=11 rc=2
+[ERR] seed=6 n_point=11 rc=2
+[ERR] seed=3 n_point=11 rc=2
+[ERR] seed=7 n_point=11 rc=2
+[ERR] seed=5 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=8 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=9 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=10 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+[ERR] seed=15 n_point=11 rc=2
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=13 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=11 n_point=11 rc=2
+[ERR] seed=12 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=14 n_point=11 rc=2
+[ERR] seed=16 n_point=11 rc=2
+[ERR] seed=17 n_point=11 rc=2
+[ERR] seed=19 n_point=11 rc=2
+[ERR] seed=21 n_point=11 rc=2
+[ERR] seed=18 n_point=11 rc=2
+[ERR] seed=20 n_point=11 rc=2
+[ERR] seed=23 n_point=11 rc=2
+[ERR] seed=22 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=24 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=26 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=25 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=29 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=31 n_point=11 rc=2
+[ERR] seed=28 n_point=11 rc=2
+[ERR] seed=27 n_point=11 rc=2
+[ERR] seed=30 n_point=11 rc=2
+[ERR] seed=35 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+[ERR] seed=37 n_point=11 rc=2
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=33 n_point=11 rc=2
+[ERR] seed=32 n_point=11 rc=2
+[ERR] seed=36 n_point=11 rc=2
+[ERR] seed=39 n_point=11 rc=2
+[ERR] seed=34 n_point=11 rc=2
+[ERR] seed=38 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=40 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=41 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=44 n_point=11 rc=2
+[ERR] seed=42 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=45 n_point=11 rc=2
+[ERR] seed=46 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=48 n_point=11 rc=2
+[ERR] seed=47 n_point=11 rc=2
+[ERR] seed=49 n_point=11 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=43 n_point=11 rc=2
+[ERR] seed=1 n_point=15 rc=2
+[ERR] seed=3 n_point=15 rc=2
+[ERR] seed=4 n_point=15 rc=2
+[ERR] seed=50 n_point=11 rc=2
+[ERR] seed=2 n_point=15 rc=2
+[ERR] seed=5 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=6 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=8 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=7 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=9 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=11 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=10 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=17 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=15 n_point=15 rc=2
+[ERR] seed=12 n_point=15 rc=2
+[ERR] seed=18 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=13 n_point=15 rc=2
+[ERR] seed=16 n_point=15 rc=2
+[ERR] seed=14 n_point=15 rc=2
+[ERR] seed=19 n_point=15 rc=2
+[ERR] seed=20 n_point=15 rc=2
+[ERR] seed=21 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=22 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=24 n_point=15 rc=2
+[ERR] seed=1 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=23 n_point=15 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=25 n_point=15 rc=2
+[ERR] seed=3 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=8 n_point=20 rc=2
+[ERR] seed=4 n_point=20 rc=2
+[ERR] seed=5 n_point=20 rc=2
+[ERR] seed=7 n_point=20 rc=2
+[ERR] seed=9 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=2 n_point=20 rc=2
+[ERR] seed=11 n_point=20 rc=2
+[ERR] seed=10 n_point=20 rc=2
+[ERR] seed=6 n_point=20 rc=2
+[ERR] seed=12 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=15 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=14 n_point=20 rc=2
+[ERR] seed=13 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=18 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=16 n_point=20 rc=2
+usage: main_ortel [-h] --seed SEED [--d D] [--z_vals Z_VALS [Z_VALS ...]]
+                  [--n_per_z N_PER_Z] [--n_point N_POINT] [--N N]
+                  [--N_cp N_CP] [--N_hip N_HIP] [--tol TOL] [--batch BATCH]
+                  [--out OUT] [--save_fibers_dir SAVE_FIBERS_DIR]
+                  [--save_hull_dir SAVE_HULL_DIR]
+                  [--save_hull_obs_dir SAVE_HULL_OBS_DIR]
+                  [--f_threshold F_THRESHOLD]
+main_ortel: error: unrecognized arguments: --target_mb 64.0
+[ERR] seed=20 n_point=20 rc=2
+[ERR] seed=24 n_point=20 rc=2
+[ERR] seed=22 n_point=20 rc=2
+[ERR] seed=21 n_point=20 rc=2
+[ERR] seed=23 n_point=20 rc=2
+[ERR] seed=25 n_point=20 rc=2
+[ERR] seed=17 n_point=20 rc=2
+[ERR] seed=19 n_point=20 rc=2
++ echo '=== FIN OK ==='

@@ -1,0 +1,2100 @@
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+[ERR] seed=4 n_point=5 rc=1
+    main()
+    main()
+[ERR] seed=5 n_point=5 rc=1
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+[ERR] seed=10 n_point=5 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=3 n_point=5 rc=1
+[ERR] seed=8 n_point=5 rc=1
+[ERR] seed=16 n_point=5 rc=1
+[ERR] seed=9 n_point=5 rc=1
+[ERR] seed=13 n_point=5 rc=1
+[ERR] seed=11 n_point=5 rc=1
+[ERR] seed=15 n_point=5 rc=1
+[ERR] seed=14 n_point=5 rc=1
+[ERR] seed=2 n_point=5 rc=1
+[ERR] seed=1 n_point=5 rc=1
+[ERR] seed=12 n_point=5 rc=1
+[ERR] seed=6 n_point=5 rc=1
+[ERR] seed=7 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=22 n_point=5 rc=1
+[ERR] seed=21 n_point=5 rc=1
+[ERR] seed=20 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+[ERR] seed=17 n_point=5 rc=1
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+[ERR] seed=19 n_point=5 rc=1
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=18 n_point=5 rc=1
+[ERR] seed=26 n_point=5 rc=1
+[ERR] seed=25 n_point=5 rc=1
+[ERR] seed=23 n_point=5 rc=1
+[ERR] seed=29 n_point=5 rc=1
+[ERR] seed=32 n_point=5 rc=1
+[ERR] seed=27 n_point=5 rc=1
+[ERR] seed=28 n_point=5 rc=1
+[ERR] seed=31 n_point=5 rc=1
+[ERR] seed=30 n_point=5 rc=1
+[ERR] seed=24 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=36 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+[ERR] seed=33 n_point=5 rc=1
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+[ERR] seed=34 n_point=5 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=35 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+[ERR] seed=40 n_point=5 rc=1
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=39 n_point=5 rc=1
+[ERR] seed=41 n_point=5 rc=1
+[ERR] seed=38 n_point=5 rc=1
+[ERR] seed=37 n_point=5 rc=1
+[ERR] seed=47 n_point=5 rc=1
+[ERR] seed=48 n_point=5 rc=1
+[ERR] seed=43 n_point=5 rc=1
+[ERR] seed=46 n_point=5 rc=1
+[ERR] seed=42 n_point=5 rc=1
+[ERR] seed=45 n_point=5 rc=1
+[ERR] seed=44 n_point=5 rc=1
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=49 n_point=5 rc=1
+[ERR] seed=52 n_point=5 rc=1
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=50 n_point=5 rc=1
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=57 n_point=5 rc=1
+[ERR] seed=54 n_point=5 rc=1
+[ERR] seed=51 n_point=5 rc=1
+[ERR] seed=60 n_point=5 rc=1
+[ERR] seed=53 n_point=5 rc=1
+[ERR] seed=61 n_point=5 rc=1
+[ERR] seed=58 n_point=5 rc=1
+[ERR] seed=55 n_point=5 rc=1
+[ERR] seed=62 n_point=5 rc=1
+[ERR] seed=64 n_point=5 rc=1
+[ERR] seed=59 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=63 n_point=5 rc=1
+[ERR] seed=56 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=66 n_point=5 rc=1
+[ERR] seed=67 n_point=5 rc=1
+[ERR] seed=70 n_point=5 rc=1
+[ERR] seed=69 n_point=5 rc=1
+[ERR] seed=65 n_point=5 rc=1
+[ERR] seed=68 n_point=5 rc=1
+[ERR] seed=75 n_point=5 rc=1
+[ERR] seed=76 n_point=5 rc=1
+[ERR] seed=71 n_point=5 rc=1
+[ERR] seed=78 n_point=5 rc=1
+[ERR] seed=73 n_point=5 rc=1
+[ERR] seed=72 n_point=5 rc=1
+[ERR] seed=74 n_point=5 rc=1
+[ERR] seed=77 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=80 n_point=5 rc=1
+[ERR] seed=79 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=83 n_point=5 rc=1
+[ERR] seed=82 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=81 n_point=5 rc=1
+[ERR] seed=90 n_point=5 rc=1
+[ERR] seed=84 n_point=5 rc=1
+[ERR] seed=86 n_point=5 rc=1
+[ERR] seed=85 n_point=5 rc=1
+[ERR] seed=93 n_point=5 rc=1
+[ERR] seed=87 n_point=5 rc=1
+[ERR] seed=92 n_point=5 rc=1
+[ERR] seed=89 n_point=5 rc=1
+[ERR] seed=88 n_point=5 rc=1
+[ERR] seed=91 n_point=5 rc=1
+[ERR] seed=94 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=96 n_point=5 rc=1
+[ERR] seed=95 n_point=5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+[ERR] seed=97 n_point=5 rc=1
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+    verts = random_vertices_by_fiber(
+[ERR] seed=98 n_point=5 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=2 n_point=8 rc=1
+[ERR] seed=3 n_point=8 rc=1
+[ERR] seed=1 n_point=8 rc=1
+[ERR] seed=6 n_point=8 rc=1
+[ERR] seed=4 n_point=8 rc=1
+[ERR] seed=99 n_point=5 rc=1
+[ERR] seed=7 n_point=8 rc=1
+[ERR] seed=100 n_point=5 rc=1
+[ERR] seed=8 n_point=8 rc=1
+[ERR] seed=5 n_point=8 rc=1
+[ERR] seed=10 n_point=8 rc=1
+[ERR] seed=9 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=11 n_point=8 rc=1
+[ERR] seed=12 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+[ERR] seed=15 n_point=8 rc=1
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+[ERR] seed=13 n_point=8 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+[ERR] seed=14 n_point=8 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=21 n_point=8 rc=1
+[ERR] seed=17 n_point=8 rc=1
+[ERR] seed=16 n_point=8 rc=1
+[ERR] seed=22 n_point=8 rc=1
+[ERR] seed=23 n_point=8 rc=1
+[ERR] seed=26 n_point=8 rc=1
+[ERR] seed=19 n_point=8 rc=1
+[ERR] seed=18 n_point=8 rc=1
+[ERR] seed=25 n_point=8 rc=1
+[ERR] seed=20 n_point=8 rc=1
+[ERR] seed=24 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=27 n_point=8 rc=1
+[ERR] seed=28 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=30 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=31 n_point=8 rc=1
+[ERR] seed=33 n_point=8 rc=1
+[ERR] seed=29 n_point=8 rc=1
+[ERR] seed=37 n_point=8 rc=1
+[ERR] seed=32 n_point=8 rc=1
+[ERR] seed=41 n_point=8 rc=1
+[ERR] seed=39 n_point=8 rc=1
+[ERR] seed=34 n_point=8 rc=1
+[ERR] seed=38 n_point=8 rc=1
+[ERR] seed=42 n_point=8 rc=1
+[ERR] seed=36 n_point=8 rc=1
+[ERR] seed=35 n_point=8 rc=1
+[ERR] seed=40 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=43 n_point=8 rc=1
+[ERR] seed=44 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=46 n_point=8 rc=1
+[ERR] seed=49 n_point=8 rc=1
+[ERR] seed=48 n_point=8 rc=1
+[ERR] seed=50 n_point=8 rc=1
+[ERR] seed=54 n_point=8 rc=1
+[ERR] seed=55 n_point=8 rc=1
+[ERR] seed=45 n_point=8 rc=1
+[ERR] seed=56 n_point=8 rc=1
+[ERR] seed=47 n_point=8 rc=1
+[ERR] seed=52 n_point=8 rc=1
+[ERR] seed=51 n_point=8 rc=1
+[ERR] seed=57 n_point=8 rc=1
+[ERR] seed=58 n_point=8 rc=1
+[ERR] seed=53 n_point=8 rc=1
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=60 n_point=8 rc=1
+[ERR] seed=59 n_point=8 rc=1
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=62 n_point=8 rc=1
+[ERR] seed=63 n_point=8 rc=1
+[ERR] seed=66 n_point=8 rc=1
+[ERR] seed=65 n_point=8 rc=1
+[ERR] seed=64 n_point=8 rc=1
+[ERR] seed=69 n_point=8 rc=1
+[ERR] seed=61 n_point=8 rc=1
+[ERR] seed=74 n_point=8 rc=1
+[ERR] seed=67 n_point=8 rc=1
+[ERR] seed=68 n_point=8 rc=1
+[ERR] seed=70 n_point=8 rc=1
+[ERR] seed=72 n_point=8 rc=1
+[ERR] seed=71 n_point=8 rc=1
+[ERR] seed=73 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=76 n_point=8 rc=1
+[ERR] seed=75 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=81 n_point=8 rc=1
+[ERR] seed=78 n_point=8 rc=1
+[ERR] seed=77 n_point=8 rc=1
+[ERR] seed=79 n_point=8 rc=1
+[ERR] seed=86 n_point=8 rc=1
+[ERR] seed=89 n_point=8 rc=1
+[ERR] seed=87 n_point=8 rc=1
+[ERR] seed=80 n_point=8 rc=1
+[ERR] seed=90 n_point=8 rc=1
+[ERR] seed=82 n_point=8 rc=1
+[ERR] seed=83 n_point=8 rc=1
+[ERR] seed=88 n_point=8 rc=1
+[ERR] seed=84 n_point=8 rc=1
+[ERR] seed=85 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=92 n_point=8 rc=1
+[ERR] seed=91 n_point=8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+[ERR] seed=93 n_point=8 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=96 n_point=8 rc=1
+[ERR] seed=98 n_point=8 rc=1
+[ERR] seed=95 n_point=8 rc=1
+[ERR] seed=100 n_point=8 rc=1
+[ERR] seed=6 n_point=11 rc=1
+[ERR] seed=97 n_point=8 rc=1
+[ERR] seed=94 n_point=8 rc=1
+[ERR] seed=99 n_point=8 rc=1
+[ERR] seed=5 n_point=11 rc=1
+[ERR] seed=2 n_point=11 rc=1
+[ERR] seed=4 n_point=11 rc=1
+[ERR] seed=1 n_point=11 rc=1
+[ERR] seed=3 n_point=11 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=8 n_point=11 rc=1
+[ERR] seed=7 n_point=11 rc=1
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 30, in main
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=9 n_point=11 rc=1
+[ERR] seed=11 n_point=11 rc=1
+[ERR] seed=10 n_point=11 rc=1
+[ERR] seed=15 n_point=11 rc=1
+[ERR] seed=13 n_point=11 rc=1
+[ERR] seed=16 n_point=11 rc=1
+[ERR] seed=19 n_point=11 rc=1
+[ERR] seed=21 n_point=11 rc=1
+[ERR] seed=20 n_point=11 rc=1
+[ERR] seed=12 n_point=11 rc=1
+[ERR] seed=18 n_point=11 rc=1
+[ERR] seed=14 n_point=11 rc=1
+[ERR] seed=17 n_point=11 rc=1
+[ERR] seed=22 n_point=11 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=24 n_point=11 rc=1
+[ERR] seed=23 n_point=11 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+[ERR] seed=30 n_point=11 rc=1
+[ERR] seed=27 n_point=11 rc=1
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=28 n_point=11 rc=1
+[ERR] seed=31 n_point=11 rc=1
+[ERR] seed=36 n_point=11 rc=1
+[ERR] seed=37 n_point=11 rc=1
+[ERR] seed=29 n_point=11 rc=1
+[ERR] seed=32 n_point=11 rc=1
+[ERR] seed=38 n_point=11 rc=1
+[ERR] seed=34 n_point=11 rc=1
+[ERR] seed=35 n_point=11 rc=1
+[ERR] seed=33 n_point=11 rc=1
+[ERR] seed=26 n_point=11 rc=1
+[ERR] seed=25 n_point=11 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=40 n_point=11 rc=1
+[ERR] seed=39 n_point=11 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+Traceback (most recent call last):
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=44 n_point=11 rc=1
+[ERR] seed=45 n_point=11 rc=1
+[ERR] seed=43 n_point=11 rc=1
+[ERR] seed=42 n_point=11 rc=1
+[ERR] seed=48 n_point=11 rc=1
+[ERR] seed=46 n_point=11 rc=1
+[ERR] seed=41 n_point=11 rc=1
+[ERR] seed=3 n_point=15 rc=1
+[ERR] seed=1 n_point=15 rc=1
+[ERR] seed=49 n_point=11 rc=1
+[ERR] seed=4 n_point=15 rc=1
+[ERR] seed=2 n_point=15 rc=1
+[ERR] seed=50 n_point=11 rc=1
+[ERR] seed=47 n_point=11 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=6 n_point=15 rc=1
+[ERR] seed=5 n_point=15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+[ERR] seed=7 n_point=15 rc=1
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=10 n_point=15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=8 n_point=15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=9 n_point=15 rc=1
+[ERR] seed=12 n_point=15 rc=1
+[ERR] seed=11 n_point=15 rc=1
+[ERR] seed=14 n_point=15 rc=1
+[ERR] seed=19 n_point=15 rc=1
+[ERR] seed=17 n_point=15 rc=1
+[ERR] seed=18 n_point=15 rc=1
+[ERR] seed=20 n_point=15 rc=1
+[ERR] seed=15 n_point=15 rc=1
+[ERR] seed=13 n_point=15 rc=1
+[ERR] seed=16 n_point=15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=22 n_point=15 rc=1
+[ERR] seed=21 n_point=15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+    main()
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=23 n_point=15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+[ERR] seed=24 n_point=15 rc=1
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+[ERR] seed=25 n_point=15 rc=1
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=1 n_point=20 rc=1
+[ERR] seed=3 n_point=20 rc=1
+[ERR] seed=2 n_point=20 rc=1
+[ERR] seed=5 n_point=20 rc=1
+[ERR] seed=4 n_point=20 rc=1
+[ERR] seed=8 n_point=20 rc=1
+[ERR] seed=9 n_point=20 rc=1
+[ERR] seed=7 n_point=20 rc=1
+[ERR] seed=11 n_point=20 rc=1
+[ERR] seed=10 n_point=20 rc=1
+[ERR] seed=6 n_point=20 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=12 n_point=20 rc=1
+[ERR] seed=13 n_point=20 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    main()
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+  File "/workspace/main_ortel.py", line 72, in <module>
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=17 n_point=20 rc=1
+[ERR] seed=15 n_point=20 rc=1
+[ERR] seed=16 n_point=20 rc=1
+[ERR] seed=18 n_point=20 rc=1
+[ERR] seed=19 n_point=20 rc=1
+[ERR] seed=23 n_point=20 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 72, in <module>
+    main()
+  File "/workspace/main_ortel.py", line 30, in main
+    verts = random_vertices_by_fiber(
+TypeError: random_vertices_by_fiber() got an unexpected keyword argument 'seed'
+[ERR] seed=14 n_point=20 rc=1
+[ERR] seed=22 n_point=20 rc=1
+[ERR] seed=24 n_point=20 rc=1
+[ERR] seed=20 n_point=20 rc=1
+[ERR] seed=21 n_point=20 rc=1
+[ERR] seed=25 n_point=20 rc=1
