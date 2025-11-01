@@ -4,7 +4,7 @@
 #SBATCH -N 1
 #SBATCH --cpus-per-task=16         # núcleos que verá tu Python
 #SBATCH --mem=16G
-#SBATCH -t 24:00:00
+#SBATCH -t 72:00:00
 #SBATCH -o logs_slurm/%x-%j.out
 #SBATCH -e logs_slurm/%x-%j.err
 

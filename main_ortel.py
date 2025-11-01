@@ -69,13 +69,13 @@ def main():
         npz_path = os.path.join(
             args.save_hull_dir, f"hull_seed_{args.seed}_npoint_{args.n_point}.npz"
         )
-        np.savez(npz_path, A=A, b=b, seed=args.seed, n_point=args.n_point, F=bestF)
+        np.savez(npz_path, A=A, b=b, seed=args.seed, n_point=args.n_point, F=bestF, BestCP = bestCP.tolist())
     elif bestF < args.f_threshold and args.save_hull_obs_dir:
         os.makedirs(args.save_hull_obs_dir, exist_ok=True)
         npz_path = os.path.join(
             args.save_hull_obs_dir, f"hull_seed_{args.seed}_npoint_{args.n_point}.npz"
         )
-        np.savez(npz_path, A=A, b=b, seed=args.seed, n_point=args.n_point, F=bestF)
+        np.savez(npz_path, A=A, b=b, seed=args.seed, n_point=args.n_point, F=bestF, BestCP = bestCP.tolist())
 
     # 5) Escribir 1 fila en CSV (append, con header si no existe)
     if args.out:

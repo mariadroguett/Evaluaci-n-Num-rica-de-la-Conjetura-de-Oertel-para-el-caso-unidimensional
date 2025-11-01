@@ -1,0 +1,24 @@
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
++ mkdir -p logs_slurm results tmp_csv results/hulls
+++ command -v apptainer
++ APPT=/usr/bin/apptainer
++ [[ -z /usr/bin/apptainer ]]
++ export OMP_NUM_THREADS=16
++ OMP_NUM_THREADS=16
++ export OPENBLAS_NUM_THREADS=16
++ OPENBLAS_NUM_THREADS=16
++ export MKL_NUM_THREADS=16
++ MKL_NUM_THREADS=16
++ export NUMEXPR_MAX_THREADS=16
++ NUMEXPR_MAX_THREADS=16
++ export SLURM_CPUS_PER_TASK
+++ hostname
++ echo '=== Nodo: host13 ==='
++ echo 'CPUs: 16   Mem: 16384   Time: '
++ echo 'Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif'
++ echo =========================
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 -V
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 /workspace/run_ortel_parallel.py
++ echo '=== FIN OK ==='
