@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 123, in <module>
+    raise SystemExit(main())
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 80, in main
+    base = f"npoint_{n_point}_{ts}"
+NameError: name 'n_point' is not defined

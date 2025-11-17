@@ -1,0 +1,759 @@
+[ERR] n_per_z=5 rid=a1824ba5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=159b5288 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=682dda99 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=b8eeed1c rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=5900ccee rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=b8fa7ecb rc=1
+[ERR] n_per_z=5 rid=8fa55dbb rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=12aa2009 rc=1
+[ERR] n_per_z=5 rid=cc3748f5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=73408318 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=9b90c554 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=7598637c rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=058f809b rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=a5a37b3c rc=1
+[ERR] n_per_z=5 rid=7183f9cd rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=59e467ac rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=4266035a rc=1
+[ERR] n_per_z=5 rid=ea977a64 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=654e0551 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=8229181f rc=1
+[ERR] n_per_z=5 rid=0bfa64d5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=0877a206 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=09dde7c6 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=221f575b rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=e4875022 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=8973211f rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=683457b1 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=80c4e2ef rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=202b5f9a rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=57a23114 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=76d76cb7 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=ba1af47a rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=e66bc722 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=13fff8c7 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=0ddc6e14 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=4dd0acbf rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=5be33a07 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=079076fb rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=86b6ac67 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=ae3e7749 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=837830d3 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=88305e11 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=b38e58f5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=efc24191 rc=1
+[ERR] n_per_z=5 rid=f2ea2071 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=823a430a rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=f9ab4074 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=367fca4e rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=c5ef6de6 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=5 rid=1615167b rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=204232cd rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=dae9900b rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=3fd43385 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=8b148197 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=5d38d54b rc=1
+[ERR] n_per_z=8 rid=dd1ce2c1 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=d813a60a rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=a68329b8 rc=1
+[ERR] n_per_z=8 rid=74033c89 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=9b467659 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=915052bd rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=5603aa5c rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=6a8a6e39 rc=1
+[ERR] n_per_z=8 rid=7a75f259 rc=1
+[ERR] n_per_z=8 rid=6a7c13bc rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=e21a9832 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=2e2e27e8 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=203008bc rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=280635f6 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=7e960085 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=982ef86d rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=19c1d440 rc=1
+[ERR] n_per_z=8 rid=3765738f rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=cad0a181 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=333ef0a1 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=0cc02ecd rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=a515e0c5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=d340deee rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=7008a340 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=b1948c4f rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=05aa70fa rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=256b63b8 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=24239a94 rc=1
+[ERR] n_per_z=8 rid=ba875f47 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=399c5059 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=91c19b59 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=bb6fbef0 rc=1
+[ERR] n_per_z=8 rid=81cd2deb rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=aab25122 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=b0d9d6b1 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=e3b097e1 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=55a9f089 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=ea35a9fd rc=1
+[ERR] n_per_z=8 rid=d158f23a rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=f22db4e6 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=bd170e6d rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=ba50efbe rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=257bb3b9 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=5ba9e0f9 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=8 rid=61acbada rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=d707a722 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=e41bd081 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=d9bf3878 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=d00ab2c0 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=59c20b90 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=4e42fedd rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=2bc20d36 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=629d0d0a rc=1
+[ERR] n_per_z=11 rid=51d68e42 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=29ec11a3 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=841e5748 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=2c6df994 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=95c79a36 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=71a87ce2 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=a187e02b rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=ce39d2ac rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=4c28ad65 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=01445e52 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=1b7d61a2 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=f0a826e4 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=7d367321 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=b4332eba rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=2abf926c rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=875ad9f5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=11 rid=361376be rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=7b9df0b2 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=1f3aa079 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=2174f7f1 rc=1
+[ERR] n_per_z=15 rid=b3aa871d rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=da64d263 rc=1
+[ERR] n_per_z=15 rid=0998af13 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=46a7924a rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=cb12eb2d rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=ab5a5153 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=0174980f rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=106ed375 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=107b9f2f rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=15 rid=b3039f67 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=6ebf5a3c rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=989fc8c6 rc=1
+[ERR] n_per_z=20 rid=dbd2135e rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=3adcba38 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=25cda1a0 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=2da3a556 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=783c0272 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=47aab8e9 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=5e507509 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=3ef7e5d5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=22468988 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=ce49a1e5 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[ERR] n_per_z=20 rid=05ce9815 rc=1
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+real	0m3.595s
+user	0m8.158s
+sys	0m8.425s

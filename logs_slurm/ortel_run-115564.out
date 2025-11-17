@@ -1,7 +1,0 @@
-=== Nodo: tokikura ===
-CPUs: 16   Mem: 16384   Time: 
-Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
-=========================
-Python 3.9.24
-
-=== Lanzando n_point=5 con 100 seeds usando 16 workers ===

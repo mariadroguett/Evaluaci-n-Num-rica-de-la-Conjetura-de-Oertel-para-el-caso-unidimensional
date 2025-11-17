@@ -1,0 +1,1519 @@
++ mkdir -p results logs_runs
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ export OPENBLAS_NUM_THREADS=1
++ OPENBLAS_NUM_THREADS=1
++ export MKL_NUM_THREADS=1
++ MKL_NUM_THREADS=1
++ export NUMEXPR_MAX_THREADS=1
++ NUMEXPR_MAX_THREADS=1
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
+++ hostname
++ echo '=== Nodo: host06 ==='
++ echo 'CPUs: 16   Mem: 16384   Time: '\''n/d'\'''
++ echo 'Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif'
++ echo =========================
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 /workspace/run_ortel_parallel.py
+[ERR] n_point=5 rid=0f3729ee rc=1
+[ERR] n_point=5 rid=d0f38c48 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=ae42cb6d rc=1
+[ERR] n_point=5 rid=8b297876 rc=1
+[ERR] n_point=5 rid=6d1940db rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=06d55e34 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d3efe28f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=963581cc rc=1
+[ERR] n_point=5 rid=88cf3721 rc=1
+[ERR] n_point=5 rid=c794fffa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=58465d2c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=fc224fbd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=50def984 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d57d0e72 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=42dfcb17 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=6dc7f670 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=febbb332 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=ed04086a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d3d82c35 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=12d9a689 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=3d794351 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=0b5f3e98 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=40615daf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=4caf5026 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=0bf1537f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=41b35377 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=79e1e019 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=0ca976ce rc=1
+[ERR] n_point=5 rid=66278d91 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=4ca5a319 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=b8412b18 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=c1e911d7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d392839a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=840deda6 rc=1
+[ERR] n_point=5 rid=cb89a3e7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=ffee9648 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=02376d9c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d19f6b67 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=fe77cb4b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=c1461021 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=96f44061 rc=1
+[ERR] n_point=5 rid=d525a094 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=f1516891 rc=1
+[ERR] n_point=5 rid=b5dbddb0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=e1b5a0e8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=3aaaa53a rc=1
+[ERR] n_point=5 rid=f70eb32e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=5605f56e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=073a0a77 rc=1
+[ERR] n_point=5 rid=84ea15f4 rc=1
+[ERR] n_point=5 rid=a9715e86 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=c8249d1f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=e353eaaa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=b8833883 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=8ddd9bbb rc=1
+[ERR] n_point=5 rid=7c8f9a2a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=f71e5b56 rc=1
+[ERR] n_point=5 rid=ba01642e rc=1
+[ERR] n_point=5 rid=cbc47283 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=05e92d8a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=0fb62099 rc=1
+[ERR] n_point=5 rid=8a697a95 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=dd13004e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=5434701a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=b4d90cc4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=e60333a5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=25314905 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=8068bcec rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=2421e5da rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=beb521e2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=b2bf1aa8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=db25d7ac rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d82aa9f3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d47cd18a rc=1
+[ERR] n_point=5 rid=c866f617 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=95847ddf rc=1
+[ERR] n_point=5 rid=adc8b5cf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=2c48b406 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=a038e9b2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=6ecac111 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=310069bb rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=a71986b9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=6de44076 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=e86bb2ee rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d3f487de rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=a13e5cbf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=d6d0015e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=ce580e91 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=e802f837 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=fe404585 rc=1
+[ERR] n_point=5 rid=fecc854c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=63dc669f rc=1
+[ERR] n_point=5 rid=79185a9c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=a2aa76f0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=c0733649 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=f01385a1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=f8f98baa rc=1
+[ERR] n_point=5 rid=63d032b8 rc=1
+[ERR] n_point=5 rid=51efaaec rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=5 rid=7f5822a6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=cf22ae33 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=d8c810a9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=80d84c2b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=7ccf2398 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=742fffb7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=a1fe5b33 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=e9c645cd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=69f734ff rc=1
+[ERR] n_point=8 rid=49c466f0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=7d0d090f rc=1
+[ERR] n_point=8 rid=f8299f0e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=92c59fb1 rc=1
+[ERR] n_point=8 rid=3bbbceed rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=28595355 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=2349c7fa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=2cce90d7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=27a37d62 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=f1af1a88 rc=1
+[ERR] n_point=8 rid=0b4ca602 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=2b681328 rc=1
+[ERR] n_point=8 rid=d2baa281 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=3d1ea9ae rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=fc293cd4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=c8e4cb4b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=aa424de7 rc=1
+[ERR] n_point=8 rid=1cc8ceb0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=597d39fe rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=6e5f67fe rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=ed3dee91 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=b8aa0cc0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=3f450786 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=ee320a5e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=8aa79f3b rc=1
+[ERR] n_point=8 rid=3431f9aa rc=1
+[ERR] n_point=8 rid=0bb53c2b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=84e4d8d2 rc=1
+[ERR] n_point=8 rid=bc006ef9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=04ed0160 rc=1
+[ERR] n_point=8 rid=43b293c2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=d031a44d rc=1
+[ERR] n_point=8 rid=8cfde3d4 rc=1
+[ERR] n_point=8 rid=9ae16538 rc=1
+[ERR] n_point=8 rid=57a14765 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=0c5ac96b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=4688af43 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=4be3a157 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=d2802c98 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=7646e393 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=adcf120f rc=1
+[ERR] n_point=8 rid=3f4d8661 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=8bc6a90d rc=1
+[ERR] n_point=8 rid=a8b6b1ac rc=1
+[ERR] n_point=8 rid=3428e7ad rc=1
+[ERR] n_point=8 rid=cdccdf99 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=514f3cee rc=1
+[ERR] n_point=8 rid=c9ffcd9c rc=1
+[ERR] n_point=8 rid=35993e84 rc=1
+[ERR] n_point=8 rid=8dbb0cc5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=32e21a88 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=dbb7114a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=86b2eea4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=f7ff87d5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=85e5a1d8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=6ed64051 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=069e5171 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=095ac617 rc=1
+[ERR] n_point=8 rid=143bfb9c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=b673f6d1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=85f3c924 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=f0b0f196 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=8b715a1e rc=1
+[ERR] n_point=8 rid=55e816a3 rc=1
+[ERR] n_point=8 rid=2a928bf7 rc=1
+[ERR] n_point=8 rid=4e284afe rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=f27e9c8e rc=1
+[ERR] n_point=8 rid=196bf736 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=79b83ccd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=97b24130 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=945ac5bd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=136dcdd1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=a4924022 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=74bf4332 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=a3047ccf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=d010f942 rc=1
+[ERR] n_point=8 rid=9b562d88 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=921e5b76 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=6644d8f7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=76789df4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=0865fe47 rc=1
+[ERR] n_point=8 rid=04855b40 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=e6c5fdc9 rc=1
+[ERR] n_point=8 rid=94838c43 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=dbf3d183 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=7dc0e023 rc=1
+[ERR] n_point=8 rid=1cba5f47 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=845db623 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=9fbbf12b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=bbec1d21 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=42ad03f9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=8 rid=bbdda307 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=b58bbd3e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=3690c2ac rc=1
+[ERR] n_point=11 rid=25b4b4ab rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=be572d66 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=4399491a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=b3de1d39 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=91991e8d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=8228e9c7 rc=1
+[ERR] n_point=11 rid=3212237d rc=1
+[ERR] n_point=11 rid=bbe09bf4 rc=1
+[ERR] n_point=11 rid=32fc17c8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=746444dc rc=1
+[ERR] n_point=11 rid=acc8e17e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=3dd14b0b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=c2439d99 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=e0de7335 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=12c41c05 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=126c9073 rc=1
+[ERR] n_point=11 rid=950106f7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=34090c95 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=c3aba4b6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=fb4b3d3d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=b038c3c5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=2671a6b8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=fc2b5fed rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=e420e185 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=2711c5a7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=942ce41f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=0ca7d2d7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=2cbd789a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=292bcdc9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=268d36fa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=14fbd5ca rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=4b8c2813 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=98bc0a75 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=89c05ca8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=39355ab6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=e045f87c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=deb903af rc=1
+[ERR] n_point=11 rid=a597ba79 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=81e5d647 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=ab80d995 rc=1
+[ERR] n_point=11 rid=22b5fa9b rc=1
+[ERR] n_point=11 rid=ab0678c2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=791cdd04 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=3838219c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=f4d4a74f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=25d92a8c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=a1fde657 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=11 rid=c1745904 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=3d280d96 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=75cfa399 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=e68a7d6d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=a0c7a437 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=798af82e rc=1
+[ERR] n_point=15 rid=ddd7dbb0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=9d369d5b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=0357a09b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=8c36321f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=f45a4ca5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=079dedbd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=85465437 rc=1
+[ERR] n_point=15 rid=c61c9552 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=4933679b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=b4574587 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=bd48f7f0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=47ecd48d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=dc5f74ec rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=c7289d5e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=f5e146f2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=9501c7a7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=7648beb9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=2cf13ec6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=eb87433e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=15 rid=3374bf41 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=185bd4aa rc=1
+[ERR] n_point=20 rid=f8ec95ac rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=8b185981 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=7763485b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=3549fea8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=a4730933 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=3deb69bc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=3e35fcfc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=0f72b365 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=d22eb467 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=fd7d731a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=fb211705 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=644adb77 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=c2a50058 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=d3a92cbd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=c9b69781 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=d21f64b4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=2ca8e425 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=c637350a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=cb42fea1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=a96d85df rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=9122b614 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=31063da0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=5fd8bad2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
+[ERR] n_point=20 rid=f338ccdb rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 8, in <module>
+    from convex_hull import random_vertices_by_fiber, generate_convex_hull, ensure_dir
+ImportError: cannot import name 'ensure_dir' from 'convex_hull' (/workspace/convex_hull.py)
++ echo '=== FIN OK ==='

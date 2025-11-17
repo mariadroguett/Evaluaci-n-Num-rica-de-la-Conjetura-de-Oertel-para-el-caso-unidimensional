@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.

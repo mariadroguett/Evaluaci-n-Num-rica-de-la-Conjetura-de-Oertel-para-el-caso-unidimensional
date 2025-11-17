@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/spool/slurm/d/job119097/slurm_script", line 38, in <module>
+    p.mkdir(parents=True, exist_ok=True)
+  File "/mnt/beegfs/home/mdroguett/miniforge3/envs/experimento_parallel/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+PermissionError: [Errno 13] Permission denied: '/var/spool/slurm/d/job119097/results'

@@ -1,0 +1,29 @@
+=== Nodo: host06 ===
+CPUs: 16   Mem: 16384   Time: 'n/d'
+Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
+=========================
+=== Lanzando experimentos seedless con 16 workers ===
+Z=[0, 1, 2] | D=2 | N=300000 | N_cp=10000 | N_hip=10000 | thr=0.18
+
+>>> n_point=5 — 1 réplicas
+[PROG] n_point=5: 1/1 (ok=0, err=1)
+[DONE] n_point=5: ok=0, err=1
+
+>>> n_point=8 — 1 réplicas
+[PROG] n_point=8: 1/1 (ok=0, err=1)
+[DONE] n_point=8: ok=0, err=1
+
+>>> n_point=11 — 1 réplicas
+[PROG] n_point=11: 1/1 (ok=0, err=1)
+[DONE] n_point=11: ok=0, err=1
+
+>>> n_point=15 — 1 réplicas
+[PROG] n_point=15: 1/1 (ok=0, err=1)
+[DONE] n_point=15: ok=0, err=1
+
+>>> n_point=20 — 1 réplicas
+[PROG] n_point=20: 1/1 (ok=0, err=1)
+[DONE] n_point=20: ok=0, err=1
+
+=== TODO COMPLETADO ===
+=== FIN OK ===

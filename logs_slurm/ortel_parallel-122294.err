@@ -1,0 +1,149 @@
++ mkdir -p logs_slurm logs_runs
++ RESULTS_DIR=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/results
++ mkdir -p /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/results
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ export OPENBLAS_NUM_THREADS=1
++ OPENBLAS_NUM_THREADS=1
++ export MKL_NUM_THREADS=1
++ MKL_NUM_THREADS=1
++ export NUMEXPR_MAX_THREADS=1
++ NUMEXPR_MAX_THREADS=1
++ export SLURM_CPUS_PER_TASK=16
++ SLURM_CPUS_PER_TASK=16
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
+++ hostname
++ echo '=== Nodo: host06 ==='
++ echo 'CPUs asignadas: 16   Mem: 16384'
++ echo 'Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif'
++ echo =========================
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 /workspace/run_ortel_parallel.py
+[ERR] n_point=5 rid=61edf9dc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=5 rid=d525de6c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=5 rid=972c8905 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=5 rid=2d979223 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=5 rid=a65d2b58 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=8 rid=f7df1ee5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=8 rid=64278cfc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=8 rid=963e0089 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=8 rid=4ea23195 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=8 rid=3e6724d7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=11 rid=dc535695 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=11 rid=0f630297 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=15 rid=9babfa49 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
+[ERR] n_point=20 rid=fd0387fc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 124, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 100, in main
+    saved_dir=np.string_(str(day_dir)),
+  File "/mnt/beegfs/home/mdroguett/.local/lib/python3.9/site-packages/numpy/__init__.py", line 397, in __getattr__
+    raise AttributeError(
+AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.
++ echo '=== FIN OK ==='

@@ -1,6 +1,6 @@
 # ortel.py
 import numpy as np
-from numpy.linalg import norm
+from numpy.linalg import norm  
 from typing import Dict, List, Tuple, Optional
 
 from vol_reject import rejection_sampling
@@ -8,9 +8,7 @@ from vol_star import ratio_cp
 
 
 def _inside(A: np.ndarray, b: np.ndarray, x: np.ndarray, tol: float = 1e-9) -> bool:
-    """
-    Chequea si x cumple Ax <= b (con tolerancia).
-    """
+    """Chequea si x cumple Ax <= b (con tolerancia)."""
     return bool(np.all(A @ x <= b + tol))
 
 
@@ -19,38 +17,34 @@ def ortel(
     b: np.ndarray,
     d: int,
     z_vals: Optional[List[int]] = None,
-    N_cp: int = 50,         # nº de CPs candidatos
-    N_hip: int = 1000,      # nº de hiperplanos aleatorios para evaluar "peor corte"
-    N: int = 80_000,        # nº de muestras MC para volúmenes relativos
+    N_cp: int = 50,        # nº de CPs candidatos
+    N_hip: int = 1000,     # nº de hiperplanos aleatorios (direcciones)
+    N: int = 80_000,       # nº de muestras MC para volúmenes relativos
     tol: float = 1e-9,
-    seed: Optional[int] = None,
     batch: Optional[int] = None,
-    guided: bool = False,   # mantenido por compatibilidad; no usamos heurística especial aquí
+    target_mb=None,
 ) -> Tuple[np.ndarray, float]:
     """
-    Busca un centerpoint aproximado maximizando F(cp) = (peor corte) / Vol(S).
+    Busca un centerpoint aproximado maximizando:
+        F(cp) = min_u  [ sum_z min(Vol(S_z ∩ H_u^+), Vol(S_z ∩ H_u^-)) ] / sum_z Vol(S_z)
 
     Parámetros
     ----------
-    A, b     : descripción Ax <= b de la envolvente convexa en R^{1+d},
-               donde la primera coordenada es z (discreta) y las d restantes son continuas.
-    d        : dimensión continua.
-    z_vals   : valores enteros de z (fibras). Si None -> [0, 1].
-    N_cp     : nº de candidatos cp a evaluar.
-    N_hip    : nº de hiperplanos aleatorios para estimar el "peor corte".
-    N        : nº de muestras Monte Carlo para estimaciones de volumen.
-    tol      : tolerancia numérica para Ax <= b.
-    seed     : semilla RNG global (reproducibilidad).
-    batch    : tamaño de lote para rejection_sampling (mem-friendly).
-    guided   : parámetro decorativo (no se usa una guía especial acá).
+    A, b   : Ax <= b en R^{1+d}, con la primera coord. = z (discreta) y las d restantes continuas.
+    d      : dimensión continua.
+    z_vals : valores enteros de z (fibras). Si None -> [0, 1].
+    N_cp   : nº de candidatos cp a evaluar.
+    N_hip  : nº de direcciones aleatorias para estimar el "peor corte".
+    N      : nº de muestras Monte Carlo para estimaciones de volumen.
+    tol    : tolerancia numérica para Ax <= b.
+    batch  : tamaño de lote para MC; si None se calcula automáticamente.
+    target_mb : memoria objetivo (MiB) para calcular batch cuando batch=None.
 
     Retorna
     -------
-    bestCP : np.ndarray de shape (1+d,)
-    bestF  : float
+    bestCP : np.ndarray (1+d,), el mejor cp encontrado
+    bestF  : float, valor de F(bestCP)
     """
-    rng = np.random.default_rng(seed)
-
     # -------- fibras (z) --------
     if z_vals is None:
         z_vals = [0, 1]
@@ -62,65 +56,56 @@ def ortel(
     b = np.asarray(b, dtype=float)
     if A.ndim != 2 or b.ndim != 1 or A.shape[0] != b.shape[0] or A.shape[1] != 1 + d:
         raise ValueError(
-            f"Dimensiones incompatibles: A {A.shape}, b {b.shape}, d={d} (esperado A[:, :].shape[1] = 1+d)."
+            f"Dimensiones incompatibles: A {A.shape}, b {b.shape}, d={d} (esperado A.shape[1] = 1+d)."
         )
 
-    # -------- Vol(S) por fibras: a_z[z] = P[(z,p) ∈ C] con p ~ U([0,1]^d) --------
-    # (Esto se usa dentro de ratio_cp típicamente para normalizar cortes;
-    #  si tu ratio_cp no los usa internamente, igual es útil tenerlos estimados.)
-    a_z: Dict[int, float] = {}
-    for zi in z_vals:
-        seed_z = int(rng.integers(2**63 - 1))
-        a_z[zi] = rejection_sampling(
-            d, A, b, zi, N, tol=tol, seed=seed_z, batch=batch
-        )
+    # (Opcional) estimar Vol(S_z) por fibra — útil para debug/diagnóstico.
+    # No es estrictamente necesario si ratio_cp ya hace su propia estimación interna.
+    # a_z: Dict[int, float] = {}
+    # for zi in z_vals:
+    #     a_z[zi] = rejection_sampling(d, A, b, zi, N, tol=tol, batch=batch, target_mb=target_mb)
 
     # -------- búsqueda de CP --------
     bestF: float = -np.inf
     bestCP: Optional[np.ndarray] = None
 
-    for _ in range(N_cp):
-        # muestreamos un cp candidato adentro del dominio z × [0,1]^d
-        # estrategia simple: z al azar y p ~ U([0,1]^d)
-        z_cp = int(rng.choice(z_vals_arr))
-        p_cp = rng.random(d)  # (d,)
+    for _ in range(int(N_cp)):
+        # Muestreamos un cp candidato en z × [0,1]^d:
+        z_cp = int(np.random.choice(z_vals_arr))
+        p_cp = np.random.rand(d)                 # (d,)
         cp = np.concatenate([[float(z_cp)], p_cp]).astype(float)
 
-        # Si no cae dentro de la envolvente, lo descartamos rápido (no debería pasar a menudo)
+        # Debe caer dentro de la envolvente
         if not _inside(A, b, cp, tol=tol):
             continue
 
-        # OJO: ratio_cp de tu vol_star.py requiere N explícito (esta era la causa del error).
-        # Firma esperada: ratio_cp(A, b, cp, z_vals, N_hip, d, N, tol=..., seed=...)
+        # Evalúa F(cp) con N_hip direcciones y N muestras por fibra
         F = ratio_cp(
             A, b, cp, z_vals, N_hip, d, N,
-            tol=tol,
-            seed=int(rng.integers(2**63 - 1))
+            tol=tol, batch=batch, target_mb=target_mb
         )
 
         if F > bestF:
             bestF = float(F)
             bestCP = cp.copy()
 
-    # si nunca mejoró (muy raro), devolvemos algún punto válido (centroide seguro)
+    # Fallback: intenta encontrar un cp válido si no hubo suerte (raro pero posible)
     if bestCP is None:
-        # fallback: promedio de un par de puntos internos simples
-        # intentamos varias veces encontrar algo interior
         for _ in range(1000):
-            z_cp = int(rng.choice(z_vals_arr))
-            p_cp = rng.random(d)
+            z_cp = int(np.random.choice(z_vals_arr))
+            p_cp = np.random.rand(d)
             cp_try = np.concatenate([[float(z_cp)], p_cp])
             if _inside(A, b, cp_try, tol=tol):
                 bestCP = cp_try
                 bestF = ratio_cp(
                     A, b, bestCP, z_vals, N_hip, d, N,
-                    tol=tol,
-                    seed=int(rng.integers(2**63 - 1))
+                    tol=tol, batch=batch, target_mb=target_mb
                 )
                 break
 
     if bestCP is None:
-        # Último recurso: devolver algo consistente
+        # Último recurso: algo consistente
         bestCP = np.zeros(1 + d, dtype=float)
+        bestF = float(0.0)
 
     return bestCP, float(bestF)

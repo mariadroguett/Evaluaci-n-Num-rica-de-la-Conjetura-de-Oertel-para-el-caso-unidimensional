@@ -1,0 +1,2719 @@
++ mkdir -p results logs_runs
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ export OPENBLAS_NUM_THREADS=1
++ OPENBLAS_NUM_THREADS=1
++ export MKL_NUM_THREADS=1
++ MKL_NUM_THREADS=1
++ export NUMEXPR_MAX_THREADS=1
++ NUMEXPR_MAX_THREADS=1
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
+++ hostname
++ echo '=== Nodo: host06 ==='
++ echo 'CPUs: 16   Mem: 16384   Time: '\''n/d'\'''
++ echo 'Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif'
++ echo =========================
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 /workspace/run_ortel_parallel.py
+[ERR] n_point=5 rid=ccdd540a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=5427cc7a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=467535d1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=f3dbc228 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=63c365c7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=1c00a9d4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=9d376f87 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=a7502a9f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=1a91ffee rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=4a4c8b71 rc=1
+[ERR] n_point=5 rid=73de71e3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=90718d16 rc=1
+[ERR] n_point=5 rid=9abb5ec2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=5c61f8a2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=287f9028 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=cb7b84bf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=ed18fcd3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=8d605eb7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=e35b2a51 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=13b1d5d2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=d142ed77 rc=1
+[ERR] n_point=5 rid=bf547ee8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=df865ee4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=c10c26a8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=a3ab8290 rc=1
+[ERR] n_point=5 rid=54d6997c rc=1
+[ERR] n_point=5 rid=db4fcf17 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=bfbee4e6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=bd797286 rc=1
+[ERR] n_point=5 rid=1c5e2526 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=457dbb66 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=e82949a0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=de5aa1a7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=6ecedcef rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=5656ef72 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=a333a83f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=bed003a7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=4839c091 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=523ac2f5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=11d0d5a2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=c24f5023 rc=1
+[ERR] n_point=5 rid=0f711ea7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=31799e5a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=445b771a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=ecde7a76 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=52ec9409 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=3842cb67 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=3111f7af rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=936f64b8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=e7c3d2c3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=6c061ba2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=36d1bb3c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=737f2834 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=1406098e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=4942d237 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=dfb1a96b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=3097463b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=6119d35a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=5c16d510 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=8b7e1400 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=000a6aaf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=6dc47995 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=5a74a788 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=c6a9b48b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=00c93082 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=dc1213d7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=51c0d32e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=7a49994c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=77dea169 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=812b3f15 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=e0124b1e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=6cb2c2cd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=b615681d rc=1
+[ERR] n_point=5 rid=3cbe5254 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=e33dfb70 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=9f7b7d47 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=b7f59a06 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=0bab238a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=59c29c1c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=8ea2b041 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=1a350be6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=965c171e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=49b2beed rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=4b56cc28 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=69a9248e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=385a5581 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=cb653db2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=00fc0cf3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=7ad60580 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=46d3cd8b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=fc14125f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=4c281bb1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=fd25c8f9 rc=1
+[ERR] n_point=5 rid=a6d4d454 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=8144a54b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=9f3f9088 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=d30ebce4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=bd4b0cbc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=bdf41cf2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=5 rid=3415434c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=ae2d3706 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=dc962274 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=1f64cf0f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=b1ac6a87 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=a9b96def rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=0e8e07b9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=904b1160 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=9871d891 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=bf23bbc2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=dba07ac3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=ca9d4fc5 rc=1
+[ERR] n_point=8 rid=1bd9e93e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=367f9eba rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=7f20308e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=41d4133b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=59c67917 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=3b7008e0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=88983c3b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=2f85a904 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=f12442f3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=61cc63eb rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=6270a8a4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=47d92f4f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=5093b7f3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=eadcae92 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=03ddf172 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=c59f7324 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=62c56c99 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=8cf6096b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=a74d331e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=9d95b951 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=cb6ab7c8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=d6be857c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=dd4cd137 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=cffb0d06 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=25d975aa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=d3b0248b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=207648f1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=9f146b6b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=cde76c5b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=979278fe rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=95a0902b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=5dfb07bf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=79e055a5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=8a4d52d1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=fd8c1679 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=23c255bf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=87690ba1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=e044c155 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=05eae77b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=dda55710 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=489cb829 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=55c7cf2e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=ade12391 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=b5505c3f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=c289547d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=df091445 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=bebdc3b5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=d29c436b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=bcd20e35 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=8b60ff7b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=e725f77b rc=1
+[ERR] n_point=8 rid=b3b00138 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=be931f83 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=4fc0a0e2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=c9e429c8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=d39cdbe1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=51f7cbe5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=a3acb1f2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=75f7d88f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=edc44b37 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=bc8384d3 rc=1
+[ERR] n_point=8 rid=0152d3b0 rc=1
+[ERR] n_point=8 rid=f8bb91b5 rc=1
+[ERR] n_point=8 rid=a93acae1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=f44f370f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=b2d45369 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=74c5b315 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=933a3ddb rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=99740077 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=1b44791d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=5304d1cd rc=1
+[ERR] n_point=8 rid=64f9e5b1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=31401aaa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=bef6dbe4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=d8a52883 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=649473c0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=7ce7c924 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=25f4c2b9 rc=1
+[ERR] n_point=8 rid=a9d44217 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=830c2560 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=310076b7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=c188f66e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=c6d30f55 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=13074aa6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=c799ec07 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=2e417724 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=adc3626c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=e546fbc8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=8 rid=0aff0edf rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=33a10dc7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=028b9692 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=96c689c5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=996ca0c7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=9d95befa rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=3660f0d6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=a7b190d4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=acdb3a53 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=6c1987a7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=da44fb59 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=8e8d4772 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=603a0021 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=b9ee274e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=d85fc96e rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=70545f1f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=85f7594b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=bad20c41 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=acbdbc3c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=ec689946 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=80a9be1d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=05ba67f1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=905c4d50 rc=1
+[ERR] n_point=11 rid=34076bc9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=1ec4992a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=82649fc9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=7c387479 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=efcf4513 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=59f6ee57 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=de0a5dda rc=1
+[ERR] n_point=11 rid=1ff15723 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=ef096185 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=a1e3cbf0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=78c8d4b5 rc=1
+[ERR] n_point=11 rid=5eb18239 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=b3a6b176 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=48052410 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=baf30264 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=7ab83698 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=dd4c2535 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=ac2bb7c8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=98394c03 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=585c05de rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=05bdcd58 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=e9c63432 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=34c71b1d rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=2be3d223 rc=1
+[ERR] n_point=11 rid=887acc44 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=3fed3609 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=6708e5cc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=11 rid=f98907dd rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=9d6c9ac5 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=49e7889c rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=0f4fede0 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=8ac51dc6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=b17a5eb4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=533a15a2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=b6c021b2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=a48db4f7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=1dd71573 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=7d6ed208 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=509ce4e1 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=7938c61c rc=1
+[ERR] n_point=15 rid=a7958590 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=716d4d54 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=352dc950 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=5968cb14 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=3f028ba6 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=e6c6c36b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=3a293c85 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=62821a08 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=42aeb36a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=aecfc7dc rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=892cebad rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=accf8e74 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=15 rid=3baa4d01 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=22e77b02 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=628c538b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=323a1b52 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=9d9983be rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=7f9c2652 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=31daa822 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=80aa5ad7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=87ba3aa2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=8b64343a rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=02c04ce7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=eb1063ec rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=8cd86a7b rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=30198d78 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=1c06103b rc=1
+[ERR] n_point=20 rid=d1b80411 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=e819f372 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=b5f86b2f rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=4fff1cc3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=1882ddec rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=691c2fd8 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=5556d274 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=12cba313 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=76e5ea27 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=03a0a180 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
+[ERR] n_point=20 rid=b8c50df9 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+NameError: name 'verts' is not defined
++ echo '=== FIN OK ==='

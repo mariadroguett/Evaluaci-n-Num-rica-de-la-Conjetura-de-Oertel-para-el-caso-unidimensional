@@ -1,0 +1,109 @@
++ mkdir -p results logs_runs
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ export OPENBLAS_NUM_THREADS=1
++ OPENBLAS_NUM_THREADS=1
++ export MKL_NUM_THREADS=1
++ MKL_NUM_THREADS=1
++ export NUMEXPR_MAX_THREADS=1
++ NUMEXPR_MAX_THREADS=1
++ ROOT=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional
++ WORK=/workspace
++ SIF=/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif
+++ hostname
++ echo '=== Nodo: host06 ==='
++ echo 'CPUs: 16   Mem: 16384   Time: '\''n/d'\'''
++ echo 'Contenedor: /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif'
++ echo =========================
++ /usr/bin/apptainer exec --bind /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional:/workspace /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/ortel.sif python3 /workspace/run_ortel_parallel.py
+[ERR] n_point=5 rid=df2844ea rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+  File "_qhull.pyx", line 2425, in scipy.spatial._qhull.ConvexHull.__init__
+  File "_qhull.pyx", line 343, in scipy.spatial._qhull._Qhull.__init__
+scipy.spatial._qhull.QhullError: QH6013 qhull input error: input is less than 3-dimensional since all points have the same x coordinate    2
+
+While executing:  | qhull i Qt
+Options selected for Qhull 2019.1.r 2019/06/21:
+  run-id 410994155  incidence  Qtriangulate  _pre-merge  _zero-centrum
+  _max-width 0.77  Error-roundoff 2.8e-15  _one-merge 1.9e-14
+  _near-inside 9.7e-14  Visible-distance 5.5e-15  U-max-coplanar 5.5e-15
+  Width-outside 1.1e-14  _wide-facet 3.3e-14  _maxoutside 2.2e-14
+[ERR] n_point=8 rid=3dce5bf4 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+  File "_qhull.pyx", line 2425, in scipy.spatial._qhull.ConvexHull.__init__
+  File "_qhull.pyx", line 343, in scipy.spatial._qhull._Qhull.__init__
+scipy.spatial._qhull.QhullError: QH6013 qhull input error: input is less than 3-dimensional since all points have the same x coordinate    2
+
+While executing:  | qhull i Qt
+Options selected for Qhull 2019.1.r 2019/06/21:
+  run-id 411010962  incidence  Qtriangulate  _pre-merge  _zero-centrum
+  _max-width 0.94  Error-roundoff 2.8e-15  _one-merge 1.9e-14
+  _near-inside 9.7e-14  Visible-distance 5.5e-15  U-max-coplanar 5.5e-15
+  Width-outside 1.1e-14  _wide-facet 3.3e-14  _maxoutside 2.2e-14
+[ERR] n_point=11 rid=1264e1e2 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+  File "_qhull.pyx", line 2425, in scipy.spatial._qhull.ConvexHull.__init__
+  File "_qhull.pyx", line 343, in scipy.spatial._qhull._Qhull.__init__
+scipy.spatial._qhull.QhullError: QH6013 qhull input error: input is less than 3-dimensional since all points have the same x coordinate    2
+
+While executing:  | qhull i Qt
+Options selected for Qhull 2019.1.r 2019/06/21:
+  run-id 411027769  incidence  Qtriangulate  _pre-merge  _zero-centrum
+  _max-width 0.88  Error-roundoff 2.8e-15  _one-merge 1.9e-14
+  _near-inside 9.7e-14  Visible-distance 5.5e-15  U-max-coplanar 5.5e-15
+  Width-outside 1.1e-14  _wide-facet 3.3e-14  _maxoutside 2.2e-14
+[ERR] n_point=15 rid=76b17fe7 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+  File "_qhull.pyx", line 2425, in scipy.spatial._qhull.ConvexHull.__init__
+  File "_qhull.pyx", line 343, in scipy.spatial._qhull._Qhull.__init__
+scipy.spatial._qhull.QhullError: QH6013 qhull input error: input is less than 3-dimensional since all points have the same x coordinate    2
+
+While executing:  | qhull i Qt
+Options selected for Qhull 2019.1.r 2019/06/21:
+  run-id 411061383  incidence  Qtriangulate  _pre-merge  _zero-centrum
+  _max-width 0.95  Error-roundoff 2.8e-15  _one-merge 1.9e-14
+  _near-inside 9.7e-14  Visible-distance 5.5e-15  U-max-coplanar 5.5e-15
+  Width-outside 1.1e-14  _wide-facet 3.3e-14  _maxoutside 2.2e-14
+[ERR] n_point=20 rid=d1a1cfa3 rc=1
+Traceback (most recent call last):
+  File "/workspace/main_ortel.py", line 113, in <module>
+    raise SystemExit(main())
+  File "/workspace/main_ortel.py", line 53, in main
+    A, b = generate_convex_hull(verts)
+  File "/workspace/convex_hull.py", line 45, in generate_convex_hull
+    hull = ConvexHull(verts)
+  File "_qhull.pyx", line 2425, in scipy.spatial._qhull.ConvexHull.__init__
+  File "_qhull.pyx", line 343, in scipy.spatial._qhull._Qhull.__init__
+scipy.spatial._qhull.QhullError: QH6013 qhull input error: input is less than 3-dimensional since all points have the same x coordinate    2
+
+While executing:  | qhull i Qt
+Options selected for Qhull 2019.1.r 2019/06/21:
+  run-id 411078190  incidence  Qtriangulate  _pre-merge  _zero-centrum
+  _max-width 0.93  Error-roundoff 2.8e-15  _one-merge 1.9e-14
+  _near-inside 9.7e-14  Visible-distance 5.5e-15  U-max-coplanar 5.5e-15
+  Width-outside 1.1e-14  _wide-facet 3.3e-14  _maxoutside 2.2e-14
++ echo '=== FIN OK ==='

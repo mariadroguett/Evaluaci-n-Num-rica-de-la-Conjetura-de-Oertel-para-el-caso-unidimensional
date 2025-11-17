@@ -1,0 +1,26 @@
+=== Nodo: host55 ===
+CPUs asignadas: 16
+Fecha: Sun Nov 16 08:13:19 PM -03 2025
+==========================
+=== Lanzando run_ortel_parallel.py ===
+=== Lanzando experimentos seedless con 16 workers ===
+Z=[0, 1, 2] | D=2 | N=30000 | N_cp=200 | N_hip=500 | thr=0.18
+POINTS_AND_REPS={5: 2, 8: 2, 11: 0, 15: 0, 20: 0}
+
+>>> n_per_z=5 — 2 réplicas
+[DONE] n_per_z=5: ok=2, err=0
+
+>>> n_per_z=8 — 2 réplicas
+[DONE] n_per_z=8: ok=2, err=0
+
+>>> n_per_z=11 — 0 réplicas
+[SKIP] n_per_z=11 sin réplicas
+
+>>> n_per_z=15 — 0 réplicas
+[SKIP] n_per_z=15 sin réplicas
+
+>>> n_per_z=20 — 0 réplicas
+[SKIP] n_per_z=20 sin réplicas
+
+=== TODO COMPLETADO ===
+=== FIN OK ===
