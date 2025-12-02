@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/main_ortel.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

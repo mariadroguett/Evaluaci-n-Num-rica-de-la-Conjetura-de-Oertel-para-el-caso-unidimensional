@@ -1,0 +1,5 @@
+[OK] F=0.41709 (threshold=0.18) -> hulls
+  bestCP = [1.         0.48599975 0.5063149 ]
+  best_u = [0.47795168 0.87838613]
+  - /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/results/hulls/2025-11-30/result_npoint_20_20251130_102008.npz
+  - /mnt/beegfs/home/mdroguett/Memoria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional/results/hulls/2025-11-30/verts_npoint_20_20251130_102008.npz

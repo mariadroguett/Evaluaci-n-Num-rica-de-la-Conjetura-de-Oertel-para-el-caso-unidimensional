@@ -14,11 +14,11 @@ from datetime import datetime
 # ===== Configuración general =====
 # Aquí cada clave es "n_per_z": puntos por fibra
 POINTS_AND_REPS = {
-    5:  100,
-    8:  100,
-    11: 50,
-    15: 25,
-    20: 25,
+    5:  50,
+    8:  50,
+    11: 25,
+    15: 13,
+    20: 13,
     # Para el run grande puedes usar:
     # 5:  100,
     # 8:  100,

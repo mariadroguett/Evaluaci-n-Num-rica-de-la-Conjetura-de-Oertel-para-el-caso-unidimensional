@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 # main_ortel.py (seedless, NPZ-only, routing por F)
 import argparse
-import time
 from pathlib import Path
 from datetime import datetime
 import numpy as np
 
 from convex_hull import random_vertices_by_fiber, generate_convex_hull
-from ortel import ortel  # tu versión sin seed
+from ortel import ortel  # versión que ahora devuelve bestCP, bestF, bestU
 
 
 def build_parser():
     p = argparse.ArgumentParser(
-        description="Experimento Oertel (seedless) → guarda NPZ con A, b, F, bestcp y vértices, separando entre hulls y hulls_obs según F."
+        description=(
+            "Experimento Oertel (seedless) → guarda NPZ con A, b, F, bestcp, best_u "
+            "y vértices, separando entre hulls y hulls_obs según F."
+        )
     )
     p.add_argument("--d", type=int, required=True, help="dimensión continua")
     p.add_argument("--z_vals", nargs="+", type=int, required=True, help="fibras z (enteras)")
@@ -54,8 +56,8 @@ def main():
     # 2) envolvente convexa
     A, b = generate_convex_hull(verts)
 
-    # 3) búsqueda de centerpoint
-    bestCP, bestF = ortel(
+    # 3) búsqueda de centerpoint (ahora regresa también la dirección bestU)
+    bestCP, bestF, bestU = ortel(
         A, b, d,
         z_vals=z_vals,
         N_cp=N_cp,
@@ -80,13 +82,15 @@ def main():
     # rutas completas dentro de la carpeta del día
     result_path = f"{day_dir}/result_{base}.npz"
     verts_path  = f"{day_dir}/verts_{base}.npz"
-    # 5) guardar NPZs — ¡sin np.string_()!
+
+    # 5) guardar NPZs
     np.savez_compressed(
         result_path,
         A=A,
         b=b,
         F=np.float64(bestF),
         bestcp=np.asarray(bestCP, dtype=float),
+        best_u=np.asarray(bestU, dtype=float),  # ← aquí guardamos la dirección u*
         d=np.int64(d),
         z_vals=np.array(z_vals, dtype=np.int64),
         N=np.int64(N),

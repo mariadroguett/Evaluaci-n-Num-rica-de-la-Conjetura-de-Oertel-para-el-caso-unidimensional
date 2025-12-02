@@ -1,9 +1,9 @@
 # ortel.py
 import numpy as np
-from numpy.linalg import norm  
-from typing import Dict, List, Tuple, Optional
+from numpy.linalg import norm  # por si lo usas en otros lugares
+from typing import List, Tuple, Optional
 
-from vol_reject import rejection_sampling
+from vol_reject import rejection_sampling  # si ya no lo usas, lo puedes borrar
 from vol_star import ratio_cp
 
 
@@ -23,27 +23,16 @@ def ortel(
     tol: float = 1e-9,
     batch: Optional[int] = None,
     target_mb=None,
-) -> Tuple[np.ndarray, float]:
+) -> Tuple[np.ndarray, float, np.ndarray]:
     """
     Busca un centerpoint aproximado maximizando:
         F(cp) = min_u  [ sum_z min(Vol(S_z ∩ H_u^+), Vol(S_z ∩ H_u^-)) ] / sum_z Vol(S_z)
-
-    Parámetros
-    ----------
-    A, b   : Ax <= b en R^{1+d}, con la primera coord. = z (discreta) y las d restantes continuas.
-    d      : dimensión continua.
-    z_vals : valores enteros de z (fibras). Si None -> [0, 1].
-    N_cp   : nº de candidatos cp a evaluar.
-    N_hip  : nº de direcciones aleatorias para estimar el "peor corte".
-    N      : nº de muestras Monte Carlo para estimaciones de volumen.
-    tol    : tolerancia numérica para Ax <= b.
-    batch  : tamaño de lote para MC; si None se calcula automáticamente.
-    target_mb : memoria objetivo (MiB) para calcular batch cuando batch=None.
 
     Retorna
     -------
     bestCP : np.ndarray (1+d,), el mejor cp encontrado
     bestF  : float, valor de F(bestCP)
+    bestU  : np.ndarray (d,), dirección que produce el peor corte para bestCP
     """
     # -------- fibras (z) --------
     if z_vals is None:
@@ -59,15 +48,10 @@ def ortel(
             f"Dimensiones incompatibles: A {A.shape}, b {b.shape}, d={d} (esperado A.shape[1] = 1+d)."
         )
 
-    # (Opcional) estimar Vol(S_z) por fibra — útil para debug/diagnóstico.
-    # No es estrictamente necesario si ratio_cp ya hace su propia estimación interna.
-    # a_z: Dict[int, float] = {}
-    # for zi in z_vals:
-    #     a_z[zi] = rejection_sampling(d, A, b, zi, N, tol=tol, batch=batch, target_mb=target_mb)
-
     # -------- búsqueda de CP --------
     bestF: float = -np.inf
     bestCP: Optional[np.ndarray] = None
+    bestU: Optional[np.ndarray] = None
 
     for _ in range(int(N_cp)):
         # Muestreamos un cp candidato en z × [0,1]^d:
@@ -80,32 +64,39 @@ def ortel(
             continue
 
         # Evalúa F(cp) con N_hip direcciones y N muestras por fibra
-        F = ratio_cp(
+        F_cp, u_cp = ratio_cp(
             A, b, cp, z_vals, N_hip, d, N,
             tol=tol, batch=batch, target_mb=target_mb
         )
 
-        if F > bestF:
-            bestF = float(F)
+        if F_cp > bestF:
+            bestF = float(F_cp)
             bestCP = cp.copy()
+            bestU = np.asarray(u_cp, dtype=float)
 
-    # Fallback: intenta encontrar un cp válido si no hubo suerte (raro pero posible)
+    # Fallback: intenta encontrar un cp válido si no hubo suerte
     if bestCP is None:
         for _ in range(1000):
             z_cp = int(np.random.choice(z_vals_arr))
             p_cp = np.random.rand(d)
             cp_try = np.concatenate([[float(z_cp)], p_cp])
             if _inside(A, b, cp_try, tol=tol):
-                bestCP = cp_try
-                bestF = ratio_cp(
-                    A, b, bestCP, z_vals, N_hip, d, N,
+                F_cp, u_cp = ratio_cp(
+                    A, b, cp_try, z_vals, N_hip, d, N,
                     tol=tol, batch=batch, target_mb=target_mb
                 )
+                bestCP = cp_try.astype(float)
+                bestF = float(F_cp)
+                bestU = np.asarray(u_cp, dtype=float)
                 break
 
     if bestCP is None:
         # Último recurso: algo consistente
         bestCP = np.zeros(1 + d, dtype=float)
         bestF = float(0.0)
+        bestU = np.zeros(d, dtype=float)
 
-    return bestCP, float(bestF)
+    if bestU is None:
+        bestU = np.zeros(d, dtype=float)
+
+    return bestCP, float(bestF), bestU

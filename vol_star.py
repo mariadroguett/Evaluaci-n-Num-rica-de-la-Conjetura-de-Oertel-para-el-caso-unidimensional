@@ -1,4 +1,6 @@
+# vol_star.py
 import numpy as np
+
 
 def _choose_batch(n_ineq, target_mb=None):
     """Tamaño de lote automático dado #inequaciones y una meta de memoria (MiB)."""
@@ -54,8 +56,18 @@ def _fiber_vol_est(d, A, b, z, N, tol=1e-9, batch=None, target_mb=None):
 
 def ratio_cp(A, b, cp, z_vals, N_hip, d, N, tol=1e-9, batch=None, target_mb=None):
     """
-    Estima F(cp) = min_u [ sum_z min(Vol(S_z ∩ H_u^+), Vol(S_z ∩ H_u^-)) ] / sum_z Vol(S_z),
-    donde H_u es el hiperplano que pasa por cp con normal u (solo en coordenadas continuas).
+    Estima F(cp) y la dirección u* que da el peor corte:
+
+        F(cp) = min_u [ sum_z min(Vol(S_z ∩ H_u^+), Vol(S_z ∩ H_u^-)) ] / sum_z Vol(S_z),
+
+    donde H_u es el hiperplano que pasa por cp con normal u (solo en coords continuas).
+
+    Devuelve
+    --------
+    worst_ratio : float
+        Valor estimado de F(cp).
+    best_u      : np.ndarray shape (d,)
+        Dirección (normal en coords continuas) que logra el mínimo.
     """
     A = np.asarray(A, float)
     b = np.asarray(b, float)
@@ -79,7 +91,8 @@ def ratio_cp(A, b, cp, z_vals, N_hip, d, N, tol=1e-9, batch=None, target_mb=None
 
     vol_total = sum(vols.values())
     if vol_total <= 0:
-        return 0.0
+        # No hay volumen, devolvemos ratio 0 y un u neutro
+        return 0.0, np.zeros(d, dtype=float)
 
     # Tamaño de lote para el muestreo por dirección
     if batch is None:
@@ -91,6 +104,7 @@ def ratio_cp(A, b, cp, z_vals, N_hip, d, N, tol=1e-9, batch=None, target_mb=None
             batch = min(N, max(1000, _choose_batch(n_ineq, target_mb=target_mb)))
 
     worst_ratio = 1.0  # buscamos el mínimo sobre direcciones
+    best_u = None
 
     for _ in range(int(N_hip)):
         # normal aleatoria en R^d (solo sobre coords continuas)
@@ -132,5 +146,9 @@ def ratio_cp(A, b, cp, z_vals, N_hip, d, N, tol=1e-9, batch=None, target_mb=None
         ratio_u = sum_min_sides / max(vol_total, 1e-16)
         if ratio_u < worst_ratio:
             worst_ratio = ratio_u
+            best_u = u.copy()
 
-    return float(worst_ratio)
+    if best_u is None:
+        best_u = np.zeros(d, dtype=float)
+
+    return float(worst_ratio), best_u

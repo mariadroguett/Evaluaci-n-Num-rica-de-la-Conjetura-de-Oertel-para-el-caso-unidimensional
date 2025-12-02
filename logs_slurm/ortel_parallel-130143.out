@@ -1,0 +1,55 @@
+=== Nodo: host49 ===
+CPUs asignadas: 16
+Fecha: Mon Nov 24 10:09:35 PM -03 2025
+==========================
+=== Lanzando run_ortel_parallel.py ===
+=== Lanzando experimentos seedless con 16 workers ===
+Z=[0, 1, 2] | D=2 | N=30000 | N_cp=300 | N_hip=1000 | thr=0.18
+POINTS_AND_REPS={5: 100, 8: 100, 11: 50, 15: 25, 20: 25}
+
+>>> n_per_z=5 — 100 réplicas
+[PROG] n_per_z=5: 10/100 (ok=10, err=0)
+[PROG] n_per_z=5: 20/100 (ok=20, err=0)
+[PROG] n_per_z=5: 30/100 (ok=30, err=0)
+[PROG] n_per_z=5: 40/100 (ok=40, err=0)
+[PROG] n_per_z=5: 50/100 (ok=50, err=0)
+[PROG] n_per_z=5: 60/100 (ok=60, err=0)
+[PROG] n_per_z=5: 70/100 (ok=70, err=0)
+[PROG] n_per_z=5: 80/100 (ok=80, err=0)
+[PROG] n_per_z=5: 90/100 (ok=90, err=0)
+[PROG] n_per_z=5: 100/100 (ok=100, err=0)
+[DONE] n_per_z=5: ok=100, err=0
+
+>>> n_per_z=8 — 100 réplicas
+[PROG] n_per_z=8: 10/100 (ok=10, err=0)
+[PROG] n_per_z=8: 20/100 (ok=20, err=0)
+[PROG] n_per_z=8: 30/100 (ok=30, err=0)
+[PROG] n_per_z=8: 40/100 (ok=40, err=0)
+[PROG] n_per_z=8: 50/100 (ok=50, err=0)
+[PROG] n_per_z=8: 60/100 (ok=60, err=0)
+[PROG] n_per_z=8: 70/100 (ok=70, err=0)
+[PROG] n_per_z=8: 80/100 (ok=80, err=0)
+[PROG] n_per_z=8: 90/100 (ok=90, err=0)
+[PROG] n_per_z=8: 100/100 (ok=100, err=0)
+[DONE] n_per_z=8: ok=100, err=0
+
+>>> n_per_z=11 — 50 réplicas
+[PROG] n_per_z=11: 10/50 (ok=10, err=0)
+[PROG] n_per_z=11: 20/50 (ok=20, err=0)
+[PROG] n_per_z=11: 30/50 (ok=30, err=0)
+[PROG] n_per_z=11: 40/50 (ok=40, err=0)
+[PROG] n_per_z=11: 50/50 (ok=50, err=0)
+[DONE] n_per_z=11: ok=50, err=0
+
+>>> n_per_z=15 — 25 réplicas
+[PROG] n_per_z=15: 10/25 (ok=10, err=0)
+[PROG] n_per_z=15: 20/25 (ok=20, err=0)
+[DONE] n_per_z=15: ok=25, err=0
+
+>>> n_per_z=20 — 25 réplicas
+[PROG] n_per_z=20: 10/25 (ok=10, err=0)
+[PROG] n_per_z=20: 20/25 (ok=20, err=0)
+[DONE] n_per_z=20: ok=25, err=0
+
+=== TODO COMPLETADO ===
+=== FIN OK ===
