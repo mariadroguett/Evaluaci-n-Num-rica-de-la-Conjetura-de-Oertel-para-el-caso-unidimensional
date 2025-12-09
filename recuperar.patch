@@ -1,0 +1,443 @@
+diff --git a/__pycache__/convex_hull.cpython-310.pyc b/__pycache__/convex_hull.cpython-310.pyc
+index 318f576..9b161c9 100644
+Binary files a/__pycache__/convex_hull.cpython-310.pyc and b/__pycache__/convex_hull.cpython-310.pyc differ
+diff --git a/__pycache__/convex_hull.cpython-312.pyc b/__pycache__/convex_hull.cpython-312.pyc
+index 344a0d1..7953f32 100644
+Binary files a/__pycache__/convex_hull.cpython-312.pyc and b/__pycache__/convex_hull.cpython-312.pyc differ
+diff --git a/__pycache__/ortel.cpython-310.pyc b/__pycache__/ortel.cpython-310.pyc
+index ef45608..f77226a 100644
+Binary files a/__pycache__/ortel.cpython-310.pyc and b/__pycache__/ortel.cpython-310.pyc differ
+diff --git a/__pycache__/ortel.cpython-312.pyc b/__pycache__/ortel.cpython-312.pyc
+index 259724b..00b46e6 100644
+Binary files a/__pycache__/ortel.cpython-312.pyc and b/__pycache__/ortel.cpython-312.pyc differ
+diff --git a/__pycache__/vol_reject.cpython-310.pyc b/__pycache__/vol_reject.cpython-310.pyc
+index 892777d..d427bb3 100644
+Binary files a/__pycache__/vol_reject.cpython-310.pyc and b/__pycache__/vol_reject.cpython-310.pyc differ
+diff --git a/__pycache__/vol_reject.cpython-312.pyc b/__pycache__/vol_reject.cpython-312.pyc
+index d09bf7e..0e02f5c 100644
+Binary files a/__pycache__/vol_reject.cpython-312.pyc and b/__pycache__/vol_reject.cpython-312.pyc differ
+diff --git a/__pycache__/vol_star.cpython-310.pyc b/__pycache__/vol_star.cpython-310.pyc
+index 646c1ab..7ff6900 100644
+Binary files a/__pycache__/vol_star.cpython-310.pyc and b/__pycache__/vol_star.cpython-310.pyc differ
+diff --git a/__pycache__/vol_star.cpython-312.pyc b/__pycache__/vol_star.cpython-312.pyc
+index efda44f..c0bcb47 100644
+Binary files a/__pycache__/vol_star.cpython-312.pyc and b/__pycache__/vol_star.cpython-312.pyc differ
+diff --git a/main_ortel.py b/main_ortel.py
+index 2be9724..16d1f1c 100644
+--- a/main_ortel.py
++++ b/main_ortel.py
+@@ -49,8 +49,8 @@ def main():
+     day_str = datetime.now().strftime("%Y-%m-%d")
+ 
+     # 1) puntos por fibra
+-    verts = random_vertices_by_fiber(z_vals, d, n_per_z)
+-
++    #verts = random_vertices_by_fiber(z_vals, d, n_per_z)
++    verts = [1,1,0],[ -1,1,0],[ -1,-1,0],[ 1,-1,0],[ 0,0,5]
+     # 2) envolvente convexa
+     A, b = generate_convex_hull(verts)
+ 
+diff --git a/ortel.py b/ortel.py
+index 782372b..eb7c47f 100644
+--- a/ortel.py
++++ b/ortel.py
+@@ -108,4 +108,4 @@ def ortel(
+         bestCP = np.zeros(1 + d, dtype=float)
+         bestF = float(0.0)
+ 
+-    return bestCP, float(bestF)
++    return bestCP, float(bestF)
+\ No newline at end of file
+diff --git a/requirements.txt b/requirements.txt
+index 6bad103..6e731d5 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,2 +1,3 @@
+ numpy
+ scipy
++pyarrow
+diff --git a/results/plot.py b/results/plot.py
+new file mode 100644
+index 0000000..67d1e72
+--- /dev/null
++++ b/results/plot.py
+@@ -0,0 +1,360 @@
++#!/usr/bin/env python3
++# -*- coding: utf-8 -*-
++
++"""
++plot_hull_slices_killer.py
++
++Plotea:
++  - Convex hull 3D de los vértices guardados en verts_*.npz
++  - bestCP
++  - slices P ∩ {z = k} (polígonos convexos)
++  - el hiperplano de Ax <= b con menor slack en bestCP
++    ("el hiperplano que lo mata")
++
++Además genera una segunda figura con SOLO las slices + bestCP.
++"""
++
++import numpy as np
++import matplotlib.pyplot as plt
++from pathlib import Path
++from scipy.spatial import ConvexHull
++from mpl_toolkits.mplot3d.art3d import Poly3DCollection
++
++
++# ============================
++# RUTAS (ajusta estas)
++# ============================
++
++BASE = Path("/home/maria/Evaluaci-n-Num-rica-de-la-Conjetura-de-Oertel-para-el-caso-unidimensional")
++
++VERTS_PATH = (
++    BASE / "results" / "hulls" / "2025-11-10" /
++    "verts_npoint_5_date_20251110_ts_1762829264.npz"
++)
++
++RESULT_PATH = (
++    BASE / "results" / "hulls" / "2025-11-10" /
++    "result_npoint_5_date_20251110_ts_1762829264.npz"
++)
++
++# z donde quieres slices; si pones None usa los z únicos de los vértices
++Z_SLICES = None  # por ejemplo: [0.0, 1.0, 2.0]
++
++
++# ============================
++# UTILIDADES
++# ============================
++
++def ordenar_por_angulo_2d(points2d: np.ndarray) -> np.ndarray:
++    """Ordena puntos 2D por ángulo alrededor del centro (para dibujar polígono)."""
++    cx, cy = points2d.mean(axis=0)
++    ang = np.arctan2(points2d[:, 1] - cy, points2d[:, 0] - cx)
++    return np.argsort(ang)
++
++
++def slice_raw_from_hull_z(verts3d: np.ndarray,
++                          simplices: np.ndarray,
++                          k: float,
++                          tol: float = 1e-9):
++    """
++    Interseca el hull 3D con el plano z = k.
++    Devuelve puntos 'raw' de la slice en [z,x,y].
++    """
++    pts = []
++
++    for tri_idx in simplices:
++        tri = verts3d[tri_idx]      # (3,3)
++        zs = tri[:, 0]
++        dz = zs - k
++
++        # triángulo completamente arriba/abajo
++        if np.all(dz > tol) or np.all(dz < -tol):
++            continue
++
++        # revisar las 3 aristas
++        for (i, j) in [(0, 1), (1, 2), (2, 0)]:
++            z_i, z_j = zs[i], zs[j]
++            dz_i, dz_j = dz[i], dz[j]
++
++            # arista entera en el plano
++            if abs(dz_i) <= tol and abs(dz_j) <= tol:
++                pts.append(tri[i])
++                pts.append(tri[j])
++                continue
++
++            # cruce del plano
++            if dz_i * dz_j < -tol**2:
++                t = (k - z_i) / (z_j - z_i)
++                p = tri[i] + t * (tri[j] - tri[i])
++                pts.append(p)
++
++            # uno justo en el plano
++            elif abs(dz_i) <= tol and abs(dz_j) > tol:
++                pts.append(tri[i])
++            elif abs(dz_j) <= tol and abs(dz_i) > tol:
++                pts.append(tri[j])
++
++    if not pts:
++        return None
++
++    pts = np.array(pts)
++
++    # deduplicación mínima
++    r = np.round(pts, 12)
++    _, idx_unique = np.unique(r, axis=0, return_index=True)
++    return pts[idx_unique]
++
++
++def slice_convexa_z(pts3d: np.ndarray) -> np.ndarray:
++    """
++    A partir de puntos RAW de la slice en z=k,
++    devuelve el polígono convexo en ese plano (ordenado).
++    """
++    if pts3d.shape[0] <= 2:
++        return pts3d
++
++    pts2d = pts3d[:, 1:3]  # (x,y)
++    hull2d = ConvexHull(pts2d)
++    ordered = pts3d[hull2d.vertices]
++
++    # ordenar por ángulo para que quede polígono bonito
++    order = ordenar_por_angulo_2d(ordered[:, 1:3])
++    return ordered[order]
++
++
++def plot_killer_plane(ax, A, b, bestcp, verts, n_grid=15,
++                      color="orange", alpha=0.35):
++    """
++    Dibuja el hiperplano de Ax <= b con menor slack en bestcp
++    ("el hiperplano que lo mata"), recortado al bounding box de verts.
++
++    verts: (N,3) en [z,x,y]
++    """
++    slacks = b - A @ bestcp
++    idx = int(np.argmin(slacks))
++
++    a = A[idx].astype(float)
++    beta = float(b[idx])
++
++    print(f"\n=== Hiperplano killer ===")
++    print(f"idx      = {idx}")
++    print(f"a        = {a}")
++    print(f"b        = {beta}")
++    print(f"slack(cp)= {slacks[idx]}")
++    print("=========================\n")
++
++    # elegimos coord con |a_j| más grande para despejarla
++    k = int(np.argmax(np.abs(a)))
++    other = [0, 1, 2]
++    other.remove(k)
++    u, v = other  # índices que usamos como parámetros
++
++    # bounding box en esas dos coords
++    umin, umax = verts[:, u].min(), verts[:, u].max()
++    vmin, vmax = verts[:, v].min(), verts[:, v].max()
++
++    U, V = np.meshgrid(
++        np.linspace(umin, umax, n_grid),
++        np.linspace(vmin, vmax, n_grid),
++    )
++
++    if abs(a[k]) < 1e-12:
++        print("Ojo: a[k] ~ 0, plano casi paralelo a ese eje; no lo ploteo.")
++        return
++
++    # a_k * Xk = beta - a_u*U - a_v*V
++    Xk = (beta - a[u] * U - a[v] * V) / a[k]
++
++    # reconstruir coords en orden [z,x,y]
++    coords = [None, None, None]
++    coords[k] = Xk
++    coords[u] = U
++    coords[v] = V
++
++    Zp = coords[0]
++    Xp = coords[1]
++    Yp = coords[2]
++
++    ax.plot_surface(
++        Zp, Xp, Yp,
++        alpha=alpha,
++        color=color,
++        edgecolor="none",
++    )
++
++
++# ============================
++# MAIN
++# ============================
++
++def main():
++    # --- cargar archivos ---
++    if not VERTS_PATH.is_file():
++        print("No existe el archivo de vértices:", VERTS_PATH)
++        return
++    if not RESULT_PATH.is_file():
++        print("No existe el archivo de result/bestcp:", RESULT_PATH)
++        return
++
++    dv = np.load(VERTS_PATH, allow_pickle=True)
++    dr = np.load(RESULT_PATH, allow_pickle=True)
++
++    if "verts" not in dv:
++        print("El archivo de puntos no tiene clave 'verts'. Claves:", dv.files)
++        return
++    if "bestcp" not in dr or "A" not in dr or "b" not in dr:
++        print("El result debe tener 'A', 'b' y 'bestcp'. Claves:", dr.files)
++        return
++
++    verts = np.array(dv["verts"], float)   # (N,3) [z,x,y]
++    bestcp = np.array(dr["bestcp"], float) # (3,)  [z,x,y]
++    A = np.array(dr["A"], float)
++    b = np.array(dr["b"], float)
++
++    print("verts shape:", verts.shape)
++    print("bestcp:", bestcp)
++
++    z = verts[:, 0]
++    x = verts[:, 1]
++    y = verts[:, 2]
++
++    # --- convex hull 3D de los puntos ---
++    hull3d = ConvexHull(verts)
++    faces = [verts[s] for s in hull3d.simplices]
++
++    # --- z donde hacemos slices ---
++    if Z_SLICES is None:
++        z_vals = np.unique(z)
++    else:
++        z_vals = np.array(Z_SLICES, dtype=float)
++
++    print("Slices en z =", z_vals)
++
++    # guardamos slices para la 2ª figura
++    slices_convex = []   # lista de (k, conv_pts)
++
++    colors = ["lightcoral", "khaki", "skyblue", "plum", "lightgreen"]
++
++    # ================= FIGURA 1: hull + slices + bestcp + hiperplano ==========
++    fig = plt.figure(figsize=(8, 6))
++    ax = fig.add_subplot(111, projection="3d")
++
++    # hull 3D
++    poly3d = Poly3DCollection(
++        faces,
++        facecolors="lightblue",
++        edgecolors="k",
++        linewidths=0.7,
++        alpha=0.25,
++    )
++    ax.add_collection3d(poly3d)
++
++    # hiperplano killer
++    plot_killer_plane(ax, A, b, bestcp, verts)
++
++    # bestCP
++    ax.scatter(
++        bestcp[0], bestcp[1], bestcp[2],
++        color="red", s=80, edgecolors="k", label="bestCP"
++    )
++
++    # slices
++    for idx, k in enumerate(z_vals):
++        raw = slice_raw_from_hull_z(verts, hull3d.simplices, float(k))
++        if raw is None:
++            print(f"Slice z={k}: vacía.")
++            continue
++
++        conv = slice_convexa_z(raw)
++        slices_convex.append((k, conv))
++
++        color = colors[idx % len(colors)]
++
++        if conv.shape[0] >= 3:
++            poly_slice = Poly3DCollection(
++                [conv],
++                facecolors=color,
++                edgecolors="k",
++                linewidths=1.2,
++                alpha=0.9,
++            )
++            ax.add_collection3d(poly_slice)
++        elif conv.shape[0] == 2:
++            ax.plot(conv[:, 0], conv[:, 1], conv[:, 2],
++                    color=color, linewidth=2.5)
++        else:
++            ax.scatter(conv[0, 0], conv[0, 1], conv[0, 2],
++                       s=50, color=color, edgecolors="k")
++
++        # vértices de la slice
++        ax.scatter(conv[:, 0], conv[:, 1], conv[:, 2],
++                   s=25, color="k")
++
++    # límites y labels
++    zmin, zmax = z.min(), z.max()
++    xmin, xmax = x.min(), x.max()
++    ymin, ymax = y.min(), y.max()
++
++    ax.set_xlabel("z")
++    ax.set_ylabel("x")
++    ax.set_zlabel("y")
++
++    ax.set_xlim(zmin, zmax)
++    ax.set_ylim(xmin, xmax)
++    ax.set_zlim(ymin, ymax)
++    ax.set_box_aspect([zmax - zmin, xmax - xmin, ymax - ymin])
++
++    ax.set_title("Convex hull + slices P ∩ {z=k} + bestCP + hiperplano killer")
++    ax.legend()
++    plt.tight_layout()
++
++    # ================= FIGURA 2: SOLO slices + bestcp ==========================
++    fig2 = plt.figure(figsize=(8, 6))
++    ax2 = fig2.add_subplot(111, projection="3d")
++
++    for idx, (k, conv) in enumerate(slices_convex):
++        color = colors[idx % len(colors)]
++
++        if conv.shape[0] >= 3:
++            poly_slice = Poly3DCollection(
++                [conv],
++                facecolors=color,
++                edgecolors="k",
++                linewidths=1.2,
++                alpha=0.9,
++            )
++            ax2.add_collection3d(poly_slice)
++        elif conv.shape[0] == 2:
++            ax2.plot(conv[:, 0], conv[:, 1], conv[:, 2],
++                     color=color, linewidth=2.5)
++        else:
++            ax2.scatter(conv[0, 0], conv[0, 1], conv[0, 2],
++                        s=50, color=color, edgecolors="k")
++
++        ax2.scatter(conv[:, 0], conv[:, 1], conv[:, 2],
++                    s=25, color="k")
++
++    # bestCP también aquí
++    ax2.scatter(
++        bestcp[0], bestcp[1], bestcp[2],
++        color="red", s=80, edgecolors="k", label="bestCP"
++    )
++
++    ax2.set_xlabel("z")
++    ax2.set_ylabel("x")
++    ax2.set_zlabel("y")
++
++    ax2.set_xlim(zmin, zmax)
++    ax2.set_ylim(xmin, xmax)
++    ax2.set_zlim(ymin, ymax)
++    ax2.set_box_aspect([zmax - zmin, xmax - xmin, ymax - ymin])
++
++    ax2.set_title("Solo slices P ∩ {z=k} + bestCP")
++    ax2.legend()
++    plt.tight_layout()
++
++    plt.show()
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/vol_reject.py b/vol_reject.py
+index 32600ab..56296a9 100644
+--- a/vol_reject.py
++++ b/vol_reject.py
+@@ -1,3 +1,14 @@
++import numpy as np
++
++def _choose_batch(n_ineq, target_mb=None):
++    """Tamaño de lote automático dado #inequaciones y una meta de memoria (MiB)."""
++    if target_mb is None:
++        target_mb = 64  # ~64 MiB por defecto
++    bytes_target = int(target_mb * 1024 * 1024)
++    # Cada muestra ocupa ~ 8 * n_ineq bytes al multiplicar contra A (float64)
++    m = max(1, bytes_target // (8 * max(1, n_ineq)))
++    return int(m)
++
+ def rejection_sampling(d, A, b, z, N, tol=1e-9, batch=None, target_mb=None):
+     """
+     Estima Vol_rel(S_z) = P[(z,p) ∈ C] con p ~ U([0,1]^d), i.e.,
